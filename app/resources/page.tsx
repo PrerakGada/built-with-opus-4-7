@@ -63,6 +63,14 @@ const OTHER: LinkItem[] = [
   { href: "https://github.com/anthropics/skills", title: "Agent Skills — GitHub" },
 ];
 
+const MENTOR_NOTES: LinkItem[] = [
+  {
+    href: "https://tolaniomitokun.github.io/opus47-mentor-guide/",
+    title: "Stuck? Here's what I'd tell you if we hopped on a call.",
+    note: "Tolani",
+  },
+];
+
 function Card({ item }: { item: LinkItem }) {
   return (
     <a
@@ -168,6 +176,7 @@ export default function ResourcesPage() {
         <Group title="Blogs" items={BLOGS} />
         <Group title="Courses" items={COURSES} />
         <Group title="Other" items={OTHER} />
+        <Group title="From the mentors" items={MENTOR_NOTES} />
 
         <div className="rounded-2xl ring-1 ring-border bg-surface-2 p-5 text-[13px] text-text-soft leading-relaxed">
           These are the resources the organizers explicitly listed in the
