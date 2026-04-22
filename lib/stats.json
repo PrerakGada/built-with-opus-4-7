@@ -1,0 +1,46 @@
+{
+  "builders": 497,
+  "countries": 36,
+  "withGithub": 484,
+  "withAvatar": 497,
+  "totalStarsShipped": 21633,
+  "totalContribsLastYear": 383191,
+  "totalPublicRepos": 17017,
+  "totalPRsLastYear": 9068,
+  "topLanguages": [
+    {
+      "name": "Python",
+      "count": 1102
+    },
+    {
+      "name": "TypeScript",
+      "count": 834
+    },
+    {
+      "name": "JavaScript",
+      "count": 543
+    },
+    {
+      "name": "Jupyter Notebook",
+      "count": 366
+    },
+    {
+      "name": "HTML",
+      "count": 276
+    },
+    {
+      "name": "C++",
+      "count": 129
+    },
+    {
+      "name": "Java",
+      "count": 91
+    },
+    {
+      "name": "Rust",
+      "count": 89
+    }
+  ],
+  "mentorCount": 7,
+  "judgeCount": 0
+}

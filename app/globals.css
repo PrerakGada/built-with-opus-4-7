@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Light theme (default) — Claude cream + orange
+   ============================================================ */
+:root {
+  --background: #faf9f5;
+  --foreground: #141413;
+  --surface: #ffffff;
+  --surface-2: #f3ede0;
+  --surface-hover: #f7f2e6;
+  --border: #ebe4d4;
+  --border-hover: #d9cfb7;
+  --muted: #6b6a63;
+  --text-soft: #3d3c38;
+  --accent: #da7756;
+  --accent-soft: rgba(218, 119, 86, 0.12);
+  --noise-color: #141413;
+  --noise-opacity: 0.035;
+  --scrollbar: #d9cfb7;
+}
+
+/* Dark theme — OS preference OR manual opt-in */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --background: #1b1a17;
+    --foreground: #ece9e1;
+    --surface: #23221d;
+    --surface-2: #2a2823;
+    --surface-hover: #2e2c26;
+    --border: #342f27;
+    --border-hover: #4a4238;
+    --muted: #8f8a7e;
+    --text-soft: #c7c2b6;
+    --accent: #e89472;
+    --accent-soft: rgba(232, 148, 114, 0.14);
+    --noise-color: #ece9e1;
+    --noise-opacity: 0.03;
+    --scrollbar: #3a342a;
+  }
+}
+
+:root[data-theme="dark"] {
+  --background: #1b1a17;
+  --foreground: #ece9e1;
+  --surface: #23221d;
+  --surface-2: #2a2823;
+  --surface-hover: #2e2c26;
+  --border: #342f27;
+  --border-hover: #4a4238;
+  --muted: #8f8a7e;
+  --text-soft: #c7c2b6;
+  --accent: #e89472;
+  --accent-soft: rgba(232, 148, 114, 0.14);
+  --noise-color: #ece9e1;
+  --noise-opacity: 0.03;
+  --scrollbar: #3a342a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --color-muted: var(--muted);
+  --color-text-soft: var(--text-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+* {
+  scrollbar-color: var(--scrollbar) transparent;
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: var(--noise-opacity);
+  background-image: radial-gradient(circle at 1px 1px, var(--noise-color) 1px, transparent 0);
+  background-size: 3px 3px;
+  z-index: 0;
+}
+
+.font-serif-hero {
+  font-family: var(--font-serif), "Iowan Old Style", "Palatino", "Georgia", serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* Horizontal scroll rails without the chunky default scrollbar */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}

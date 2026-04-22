@@ -1,0 +1,858 @@
+{
+  "prerakgada": {
+    "login": "PrerakGada",
+    "name": "Prerak Gada",
+    "bio": "",
+    "location": "Mumbai, India",
+    "company": "CampusOS",
+    "websiteUrl": "https://prerakgada.in",
+    "twitterUsername": "prerakgada",
+    "createdAt": "2019-12-09T21:02:23Z",
+    "isHireable": true,
+    "followers": {
+      "totalCount": 122
+    },
+    "following": {
+      "totalCount": 79
+    },
+    "repositories": {
+      "totalCount": 59
+    },
+    "pinnedItems": {
+      "nodes": [
+        {
+          "name": "Portfolio-Website",
+          "description": null,
+          "stargazerCount": 4,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/Portfolio-Website",
+          "updatedAt": "2026-04-14T16:48:18Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "PrerakGada",
+          "description": null,
+          "stargazerCount": 2,
+          "forkCount": 1,
+          "url": "https://github.com/PrerakGada/PrerakGada",
+          "updatedAt": "2026-04-04T13:38:00Z",
+          "primaryLanguage": null
+        }
+      ]
+    },
+    "topRepositories": {
+      "nodes": [
+        {
+          "name": "BobTheBuilder",
+          "description": null,
+          "stargazerCount": 5,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/BobTheBuilder",
+          "updatedAt": "2024-05-20T13:54:47Z",
+          "primaryLanguage": {
+            "name": "Dart"
+          }
+        },
+        {
+          "name": "Portfolio-Website",
+          "description": null,
+          "stargazerCount": 4,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/Portfolio-Website",
+          "updatedAt": "2026-04-14T16:48:18Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "Chatter-App",
+          "description": null,
+          "stargazerCount": 4,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/Chatter-App",
+          "updatedAt": "2024-05-03T04:11:42Z",
+          "primaryLanguage": {
+            "name": "Dart"
+          }
+        },
+        {
+          "name": "Python-Programs",
+          "description": null,
+          "stargazerCount": 4,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/Python-Programs",
+          "updatedAt": "2022-04-01T08:37:28Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "need-for-code-33",
+          "description": null,
+          "stargazerCount": 3,
+          "forkCount": 1,
+          "url": "https://github.com/PrerakGada/need-for-code-33",
+          "updatedAt": "2025-04-03T05:49:02Z",
+          "primaryLanguage": {
+            "name": "Dart"
+          }
+        },
+        {
+          "name": "agro_it",
+          "description": null,
+          "stargazerCount": 3,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/agro_it",
+          "updatedAt": "2023-05-29T09:30:33Z",
+          "primaryLanguage": {
+            "name": "HTML"
+          }
+        },
+        {
+          "name": "meals_app",
+          "description": null,
+          "stargazerCount": 3,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/meals_app",
+          "updatedAt": "2022-04-01T08:37:36Z",
+          "primaryLanguage": {
+            "name": "Dart"
+          }
+        },
+        {
+          "name": "personal_expense_app",
+          "description": null,
+          "stargazerCount": 3,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/personal_expense_app",
+          "updatedAt": "2022-04-01T08:37:37Z",
+          "primaryLanguage": {
+            "name": "Dart"
+          }
+        },
+        {
+          "name": "Python-Course",
+          "description": null,
+          "stargazerCount": 3,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/Python-Course",
+          "updatedAt": "2022-04-01T08:37:40Z",
+          "primaryLanguage": null
+        },
+        {
+          "name": "Python-Games",
+          "description": "Single Player and Multiplayer Games using Python",
+          "stargazerCount": 3,
+          "forkCount": 0,
+          "url": "https://github.com/PrerakGada/Python-Games",
+          "updatedAt": "2023-06-19T02:27:24Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        }
+      ]
+    },
+    "contributionsCollection": {
+      "totalCommitContributions": 4338,
+      "totalPullRequestContributions": 391,
+      "totalPullRequestReviewContributions": 55,
+      "totalIssueContributions": 0,
+      "contributionCalendar": {
+        "totalContributions": 4809
+      }
+    }
+  },
+  "allierays": {
+    "login": "allierays",
+    "name": "Allie Jones",
+    "bio": "",
+    "location": null,
+    "company": null,
+    "websiteUrl": "https://allierays.com/",
+    "twitterUsername": null,
+    "createdAt": "2013-07-17T17:07:42Z",
+    "isHireable": false,
+    "followers": {
+      "totalCount": 19
+    },
+    "following": {
+      "totalCount": 4
+    },
+    "repositories": {
+      "totalCount": 20
+    },
+    "pinnedItems": {
+      "nodes": [
+        {
+          "name": "agentic-loop",
+          "description": "(Mostly) autonomous AI coding toolkit for Claude Code  based on RALPH and PRD-driven development.",
+          "stargazerCount": 32,
+          "forkCount": 2,
+          "url": "https://github.com/allierays/agentic-loop",
+          "updatedAt": "2026-04-01T08:50:17Z",
+          "primaryLanguage": {
+            "name": "Shell"
+          }
+        },
+        {
+          "name": "lumis",
+          "description": "Your AI confidant. Lumis helps you capture the small moments from your day, synthesize research into lessons, and correlate your moments and learnings into stories worth sharing.",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/lumis",
+          "updatedAt": "2026-04-07T03:18:11Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "ethos-academy",
+          "description": "Ethos Academy is where AI agents learn integrity, logic, and empathy. Character takes practice. ",
+          "stargazerCount": 2,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/ethos-academy",
+          "updatedAt": "2026-02-23T16:38:20Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "ollama-wellness",
+          "description": "Comparing stateless and stateful Agentic RAG with Apple Health data, Ollama, LangChain, Redis, and RedisVL.",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/ollama-wellness",
+          "updatedAt": "2026-04-06T04:12:46Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        }
+      ]
+    },
+    "topRepositories": {
+      "nodes": [
+        {
+          "name": "agentic-loop",
+          "description": "(Mostly) autonomous AI coding toolkit for Claude Code  based on RALPH and PRD-driven development.",
+          "stargazerCount": 32,
+          "forkCount": 2,
+          "url": "https://github.com/allierays/agentic-loop",
+          "updatedAt": "2026-04-01T08:50:17Z",
+          "primaryLanguage": {
+            "name": "Shell"
+          }
+        },
+        {
+          "name": "ethos-academy",
+          "description": "Ethos Academy is where AI agents learn integrity, logic, and empathy. Character takes practice. ",
+          "stargazerCount": 2,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/ethos-academy",
+          "updatedAt": "2026-02-23T16:38:20Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "storylane-qa-editor-agent",
+          "description": "AI Agent to scrape through Storylane Demos to Provide editorial feedback.",
+          "stargazerCount": 1,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/storylane-qa-editor-agent",
+          "updatedAt": "2026-04-06T04:40:52Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "popup-interstitial-drupal",
+          "description": "Drupal 7 custom module that creates a  popup interstitial before leaving a website. Uses javascript regex to apply to ever external link",
+          "stargazerCount": 1,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/popup-interstitial-drupal",
+          "updatedAt": "2025-11-08T03:37:19Z",
+          "primaryLanguage": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "name": "allierays",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/allierays",
+          "updatedAt": "2026-04-07T05:39:24Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "debugging-claude-skills",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/debugging-claude-skills",
+          "updatedAt": "2026-04-06T00:43:04Z",
+          "primaryLanguage": null
+        },
+        {
+          "name": "fintechco",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/fintechco",
+          "updatedAt": "2026-03-19T15:12:04Z",
+          "primaryLanguage": {
+            "name": "HTML"
+          }
+        },
+        {
+          "name": "lumis",
+          "description": "Your AI confidant. Lumis helps you capture the small moments from your day, synthesize research into lessons, and correlate your moments and learnings into stories worth sharing.",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/lumis",
+          "updatedAt": "2026-04-07T03:18:11Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "clawdbot",
+          "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/clawdbot",
+          "updatedAt": "2026-01-25T03:40:53Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "dev-loop",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/allierays/dev-loop",
+          "updatedAt": "2026-01-17T02:09:14Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        }
+      ]
+    },
+    "contributionsCollection": {
+      "totalCommitContributions": 2346,
+      "totalPullRequestContributions": 191,
+      "totalPullRequestReviewContributions": 0,
+      "totalIssueContributions": 13,
+      "contributionCalendar": {
+        "totalContributions": 4373
+      }
+    }
+  },
+  "elibenven": {
+    "login": "eliBenven",
+    "name": "Eli Benveniste",
+    "bio": "",
+    "location": "Atlanta, GA",
+    "company": "VenTech, LLC",
+    "websiteUrl": null,
+    "twitterUsername": null,
+    "createdAt": "2019-11-20T17:42:48Z",
+    "isHireable": false,
+    "followers": {
+      "totalCount": 2
+    },
+    "following": {
+      "totalCount": 1
+    },
+    "repositories": {
+      "totalCount": 12
+    },
+    "pinnedItems": {
+      "nodes": [
+        {
+          "name": "site-audit",
+          "description": "CLI tool: crawl any site, run SEO checks + Lighthouse CWV audits, generate ranked HTML reports.",
+          "stargazerCount": 2,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/site-audit",
+          "updatedAt": "2026-03-30T23:11:54Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "aibugbounty",
+          "description": "Autonomous bug bounty hunting with Claude Agent SDK \u2014 6 specialist AI agents, 19 MCP tools, one command",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/aibugbounty",
+          "updatedAt": "2026-02-25T00:30:12Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "case-nexus",
+          "description": "AI-Powered Legal Caseload Intelligence \u2014 Claude Opus 4.6 Hackathon Submission",
+          "stargazerCount": 2,
+          "forkCount": 1,
+          "url": "https://github.com/eliBenven/case-nexus",
+          "updatedAt": "2026-03-26T00:25:40Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "overseer",
+          "description": "Claude Code plugin: autonomous build-verify-deploy with visual quality evaluation",
+          "stargazerCount": 1,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/overseer",
+          "updatedAt": "2026-02-24T19:46:09Z",
+          "primaryLanguage": {
+            "name": "Shell"
+          }
+        },
+        {
+          "name": "workflow-scout",
+          "description": "Chrome extension + CLI: record browser activity, detect repeated patterns, export n8n automation workflows.",
+          "stargazerCount": 2,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/workflow-scout",
+          "updatedAt": "2026-04-11T20:26:58Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "site-autofix",
+          "description": "CLI tool: detect broken links, auto-fix hrefs, generate redirect configs (Next.js/Netlify/nginx), monitor for 500s.",
+          "stargazerCount": 1,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/site-autofix",
+          "updatedAt": "2026-02-24T19:46:27Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        }
+      ]
+    },
+    "topRepositories": {
+      "nodes": [
+        {
+          "name": "console-copy",
+          "description": "Chrome extension \u2014 single shortcut to copy all console logs to clipboard",
+          "stargazerCount": 2,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/console-copy",
+          "updatedAt": "2026-02-28T21:19:22Z",
+          "primaryLanguage": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "name": "workflow-scout",
+          "description": "Chrome extension + CLI: record browser activity, detect repeated patterns, export n8n automation workflows.",
+          "stargazerCount": 2,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/workflow-scout",
+          "updatedAt": "2026-04-11T20:26:58Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "site-audit",
+          "description": "CLI tool: crawl any site, run SEO checks + Lighthouse CWV audits, generate ranked HTML reports.",
+          "stargazerCount": 2,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/site-audit",
+          "updatedAt": "2026-03-30T23:11:54Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "case-nexus",
+          "description": "AI-Powered Legal Caseload Intelligence \u2014 Claude Opus 4.6 Hackathon Submission",
+          "stargazerCount": 2,
+          "forkCount": 1,
+          "url": "https://github.com/eliBenven/case-nexus",
+          "updatedAt": "2026-03-26T00:25:40Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "overseer",
+          "description": "Claude Code plugin: autonomous build-verify-deploy with visual quality evaluation",
+          "stargazerCount": 1,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/overseer",
+          "updatedAt": "2026-02-24T19:46:09Z",
+          "primaryLanguage": {
+            "name": "Shell"
+          }
+        },
+        {
+          "name": "site-autofix",
+          "description": "CLI tool: detect broken links, auto-fix hrefs, generate redirect configs (Next.js/Netlify/nginx), monitor for 500s.",
+          "stargazerCount": 1,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/site-autofix",
+          "updatedAt": "2026-02-24T19:46:27Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "llm-telemetry",
+          "description": "Open source, vendor-neutral telemetry standard + SDKs for LLM/AI features (traces, metrics, logs) via OpenTelemetry.",
+          "stargazerCount": 1,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/llm-telemetry",
+          "updatedAt": "2026-02-24T19:57:04Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "pandadoc-claude-plugin",
+          "description": "PandaDoc API integration toolkit for Claude Code \u2014 scaffold integrations, generate document code, set up webhooks, manage templates, and debug API issues",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/pandadoc-claude-plugin",
+          "updatedAt": "2026-02-27T16:36:14Z",
+          "primaryLanguage": null
+        },
+        {
+          "name": "aibugbounty",
+          "description": "Autonomous bug bounty hunting with Claude Agent SDK \u2014 6 specialist AI agents, 19 MCP tools, one command",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/aibugbounty",
+          "updatedAt": "2026-02-25T00:30:12Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "openclaw-security-center",
+          "description": "Security control plane for OpenClaw deployments (posture, remediation, monitoring, audit trail).",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/eliBenven/openclaw-security-center",
+          "updatedAt": "2026-02-23T20:34:48Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        }
+      ]
+    },
+    "contributionsCollection": {
+      "totalCommitContributions": 47,
+      "totalPullRequestContributions": 0,
+      "totalPullRequestReviewContributions": 0,
+      "totalIssueContributions": 37,
+      "contributionCalendar": {
+        "totalContributions": 2459
+      }
+    }
+  },
+  "tolaniomitokun": {
+    "login": "tolaniomitokun",
+    "name": null,
+    "bio": null,
+    "location": null,
+    "company": null,
+    "websiteUrl": null,
+    "twitterUsername": null,
+    "createdAt": "2025-11-27T12:09:45Z",
+    "isHireable": false,
+    "followers": {
+      "totalCount": 1
+    },
+    "following": {
+      "totalCount": 0
+    },
+    "repositories": {
+      "totalCount": 8
+    },
+    "pinnedItems": {
+      "nodes": []
+    },
+    "topRepositories": {
+      "nodes": [
+        {
+          "name": "sip-and-claude-portfolio",
+          "description": "Personal portfolio starter for Sip & Claude: Dallas workshop",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/tolaniomitokun/sip-and-claude-portfolio",
+          "updatedAt": "2026-03-28T04:56:39Z",
+          "primaryLanguage": {
+            "name": "HTML"
+          }
+        },
+        {
+          "name": "sip-and-claude-meal-planner",
+          "description": "AI-powered meal planner & cocktail bar built at Sip & Claude: Dallas. Find recipes by ingredients, discover signature drinks, plan your week.",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/tolaniomitokun/sip-and-claude-meal-planner",
+          "updatedAt": "2026-03-28T04:47:27Z",
+          "primaryLanguage": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "name": "ai-march-madness",
+          "description": "\ud83c\udfc0 AI March Madness: Sweet 30 \u2014 30 AI tools, 16 days, head-to-head matchups",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/tolaniomitokun/ai-march-madness",
+          "updatedAt": "2026-03-19T15:16:57Z",
+          "primaryLanguage": {
+            "name": "HTML"
+          }
+        },
+        {
+          "name": "freshapply",
+          "description": "PM/AI PM job scraper that tracks company boards, scores roles on freshness + fit, and generates an interactive HTML dashboard",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/tolaniomitokun/freshapply",
+          "updatedAt": "2026-03-11T13:50:42Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "claude-code-notify",
+          "description": "Get notified on your Mac and phone when Claude Code needs your attention",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/tolaniomitokun/claude-code-notify",
+          "updatedAt": "2026-02-24T16:33:02Z",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        {
+          "name": "emergent-diagnostic-institution",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/tolaniomitokun/emergent-diagnostic-institution",
+          "updatedAt": "2026-02-24T06:56:16Z",
+          "primaryLanguage": {
+            "name": "JavaScript"
+          }
+        },
+        {
+          "name": "supreme-guide",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/tolaniomitokun/supreme-guide",
+          "updatedAt": "2026-01-12T04:15:51Z",
+          "primaryLanguage": null
+        },
+        {
+          "name": "little-sprouts-webhook",
+          "description": "Voice agent webhook for Little Sprouts Pediatrics capstone",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/tolaniomitokun/little-sprouts-webhook",
+          "updatedAt": "2025-12-06T20:50:24Z",
+          "primaryLanguage": {
+            "name": "JavaScript"
+          }
+        }
+      ]
+    },
+    "contributionsCollection": {
+      "totalCommitContributions": 48,
+      "totalPullRequestContributions": 0,
+      "totalPullRequestReviewContributions": 0,
+      "totalIssueContributions": 0,
+      "contributionCalendar": {
+        "totalContributions": 57
+      }
+    }
+  },
+  "brb-dreaming": {
+    "login": "brb-dreaming",
+    "name": "B",
+    "bio": "",
+    "location": null,
+    "company": null,
+    "websiteUrl": null,
+    "twitterUsername": null,
+    "createdAt": "2024-07-25T19:07:17Z",
+    "isHireable": false,
+    "followers": {
+      "totalCount": 4
+    },
+    "following": {
+      "totalCount": 4
+    },
+    "repositories": {
+      "totalCount": 4
+    },
+    "pinnedItems": {
+      "nodes": []
+    },
+    "topRepositories": {
+      "nodes": [
+        {
+          "name": "biological-twin",
+          "description": "Meet your biological twin \u2014 a digital mirror born from your DNA that explains you to yourself. Built with Opus 4.6 for the Claude Code Hackathon.",
+          "stargazerCount": 13,
+          "forkCount": 1,
+          "url": "https://github.com/brb-dreaming/biological-twin",
+          "updatedAt": "2026-04-10T04:55:01Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "agent-monitor",
+          "description": "A floating macOS dashboard for all your Claude Code sessions. Know what's working, what's done, and what needs you \u2014 at a glance.",
+          "stargazerCount": 12,
+          "forkCount": 3,
+          "url": "https://github.com/brb-dreaming/agent-monitor",
+          "updatedAt": "2026-04-15T19:26:28Z",
+          "primaryLanguage": {
+            "name": "Swift"
+          }
+        },
+        {
+          "name": "prisminstallation",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/brb-dreaming/prisminstallation",
+          "updatedAt": "2025-11-27T11:51:30Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "fluxfun",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/prysm-0/fluxfun",
+          "updatedAt": "2025-01-07T16:41:25Z",
+          "primaryLanguage": null
+        }
+      ]
+    },
+    "contributionsCollection": {
+      "totalCommitContributions": 131,
+      "totalPullRequestContributions": 6,
+      "totalPullRequestReviewContributions": 0,
+      "totalIssueContributions": 0,
+      "contributionCalendar": {
+        "totalContributions": 1061
+      }
+    }
+  },
+  "amichalski2": {
+    "login": "amichalski2",
+    "name": null,
+    "bio": null,
+    "location": null,
+    "company": null,
+    "websiteUrl": null,
+    "twitterUsername": null,
+    "createdAt": "2019-07-27T15:05:27Z",
+    "isHireable": false,
+    "followers": {
+      "totalCount": 5
+    },
+    "following": {
+      "totalCount": 6
+    },
+    "repositories": {
+      "totalCount": 5
+    },
+    "pinnedItems": {
+      "nodes": []
+    },
+    "topRepositories": {
+      "nodes": [
+        {
+          "name": "blasto",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/amichalski2/blasto",
+          "updatedAt": "2026-02-10T00:52:39Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        },
+        {
+          "name": "RAG_Techniques",
+          "description": "This repository showcases various advanced techniques for Retrieval-Augmented Generation (RAG) systems. RAG systems combine information retrieval with generative models to provide accurate and contextually rich responses.",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/amichalski2/RAG_Techniques",
+          "updatedAt": "2024-12-02T13:45:29Z",
+          "primaryLanguage": {
+            "name": "Jupyter Notebook"
+          }
+        },
+        {
+          "name": "GenAI_Agents",
+          "description": "This repository provides tutorials and implementations for various Generative AI Agent techniques, from basic to advanced. It serves as a comprehensive guide for building intelligent, interactive AI systems.",
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/amichalski2/GenAI_Agents",
+          "updatedAt": "2024-11-17T22:57:04Z",
+          "primaryLanguage": {
+            "name": "Jupyter Notebook"
+          }
+        },
+        {
+          "name": "owleyeai-experiments",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/amichalski2/owleyeai-experiments",
+          "updatedAt": "2024-12-02T14:04:09Z",
+          "primaryLanguage": {
+            "name": "Jupyter Notebook"
+          }
+        },
+        {
+          "name": "hermes",
+          "description": null,
+          "stargazerCount": 0,
+          "forkCount": 0,
+          "url": "https://github.com/amichalski2/hermes",
+          "updatedAt": "2024-10-26T16:45:26Z",
+          "primaryLanguage": {
+            "name": "TypeScript"
+          }
+        }
+      ]
+    },
+    "contributionsCollection": {
+      "totalCommitContributions": 95,
+      "totalPullRequestContributions": 10,
+      "totalPullRequestReviewContributions": 0,
+      "totalIssueContributions": 0,
+      "contributionCalendar": {
+        "totalContributions": 1009
+      }
+    }
+  }
+}

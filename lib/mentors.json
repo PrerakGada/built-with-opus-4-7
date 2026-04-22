@@ -1,0 +1,80 @@
+[
+  {
+    "handle": "allierays",
+    "firstName": "Allie",
+    "lastName": "Jones",
+    "githubUsername": "allierays",
+    "xHandle": "allierays",
+    "linkedinUsername": "allierays",
+    "description": "Community Mentor · Allie builds with Claude Code and ships fast. Reach out on any social below.",
+    "location": null,
+    "avatarUrl": "https://github.com/allierays.png?size=200"
+  },
+  {
+    "handle": "ven",
+    "firstName": "Eli",
+    "lastName": "Benveniste",
+    "githubUsername": "elibenven",
+    "xHandle": "elibenveniste",
+    "linkedinUsername": "eli-benveniste",
+    "description": "Community Mentor · Eli builds with Claude Code and ships fast. Reach out on any social below.",
+    "location": null,
+    "avatarUrl": "https://github.com/elibenven.png?size=200"
+  },
+  {
+    "handle": "prerak",
+    "firstName": "Prerak",
+    "lastName": "Gada",
+    "githubUsername": "PrerakGada",
+    "xHandle": "prerakgada",
+    "linkedinUsername": "prerakgada",
+    "siteUrl": "https://prerakgada.in",
+    "description": "Community Mentor · Founder / CEO at Engaze and CampusOS. Loves Claude Code internals, dev-tooling and helping builders unblock fast. Reach out on any social.",
+    "location": "Mumbai, India",
+    "avatarUrl": "https://github.com/prerakgada.png?size=200"
+  },
+  {
+    "handle": "tolatokuns",
+    "firstName": "Tolani",
+    "lastName": "Omitokun",
+    "githubUsername": "tolaniomitokun",
+    "xHandle": null,
+    "linkedinUsername": "tolaniomitokunproductmanager",
+    "description": "Community Mentor · Product manager & builder. Reach out on LinkedIn or GitHub.",
+    "location": null,
+    "avatarUrl": "https://github.com/tolaniomitokun.png?size=200"
+  },
+  {
+    "handle": "hey_brb",
+    "firstName": "Barbara",
+    "lastName": "Pascetta",
+    "githubUsername": "brb-dreaming",
+    "xHandle": "ad_astraea",
+    "linkedinUsername": "bpascetta",
+    "description": "Community Mentor · Building & shipping with Claude Code. Reach out on any social below.",
+    "location": null,
+    "avatarUrl": "https://github.com/brb-dreaming.png?size=200"
+  },
+  {
+    "handle": "cogsec",
+    "firstName": "cogsec",
+    "lastName": "",
+    "githubUsername": null,
+    "xHandle": null,
+    "linkedinUsername": null,
+    "description": "Community Mentor · Details coming soon. Reach out on Discord for now.",
+    "location": null,
+    "avatarUrl": null
+  },
+  {
+    "handle": "AMichalski",
+    "firstName": "Adrian",
+    "lastName": "Michalski",
+    "githubUsername": "amichalski2",
+    "xHandle": "m_adrian2",
+    "linkedinUsername": "adrian-michalski-227624170",
+    "description": "Community Mentor · Adrian builds with Claude Code and ships fast. Reach out on any social below.",
+    "location": null,
+    "avatarUrl": "https://github.com/amichalski2.png?size=200"
+  }
+]
