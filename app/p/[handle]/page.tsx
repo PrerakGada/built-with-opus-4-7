@@ -209,11 +209,13 @@ export default async function Page(props: Props) {
               )}
             </div>
 
+            {/* Score breakdown sidebar — hidden for now per community feedback.
             {p.scoreComponents && p.role === "participant" && (
               <aside className="lg:w-[320px] lg:sticky lg:top-20">
                 <ScoreBreakdown c={p.scoreComponents} score={p.score} />
               </aside>
             )}
+            */}
           </section>
         )}
 

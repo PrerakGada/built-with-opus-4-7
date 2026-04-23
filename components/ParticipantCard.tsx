@@ -45,7 +45,7 @@ export function ParticipantCard({ p }: { p: Participant }) {
   const loc = bestLocation(p);
   const gh = p.github;
   const badge = ROLE_LABEL[p.role];
-  const showScore = p.role === "participant" && !!gh;
+  // const showScore = p.role === "participant" && !!gh;
   const roleStyle = ROLE_CARD_STYLE[p.role];
 
   const cardHref = `/p/${encodeURIComponent(p.handle)}`;
@@ -92,6 +92,7 @@ export function ParticipantCard({ p }: { p: Participant }) {
           <p className="truncate text-[12px] text-muted font-mono">@{p.handle}</p>
           {loc && <p className="truncate text-[12px] text-muted mt-0.5">{loc}</p>}
         </div>
+        {/* Score chip — hidden for now per community feedback.
         {showScore && (
           <div
             className={
@@ -106,6 +107,7 @@ export function ParticipantCard({ p }: { p: Participant }) {
             </div>
           </div>
         )}
+        */}
       </div>
 
       {p.description && (

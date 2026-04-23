@@ -16,17 +16,19 @@ const FILTERS: { key: Filter; label: string }[] = [
 type SortKey = "score" | "stars" | "contribs" | "prs" | "followers" | "name";
 
 const SORTS: { key: SortKey; label: string; cmp: (a: Participant, b: Participant) => number }[] = [
-  { key: "score", label: "Score", cmp: (a, b) => b.score - a.score },
-  {
-    key: "stars",
-    label: "Stars",
-    cmp: (a, b) => (b.github?.totalStars ?? 0) - (a.github?.totalStars ?? 0),
-  },
+  // Score sort — hidden for now per community feedback (scores are still
+  // computed in the data, just not surfaced in the UI).
+  // { key: "score", label: "Score", cmp: (a, b) => b.score - a.score },
   {
     key: "contribs",
     label: "Contribs (1y)",
     cmp: (a, b) =>
       (b.github?.contributionsLastYear ?? 0) - (a.github?.contributionsLastYear ?? 0),
+  },
+  {
+    key: "stars",
+    label: "Stars",
+    cmp: (a, b) => (b.github?.totalStars ?? 0) - (a.github?.totalStars ?? 0),
   },
   {
     key: "prs",
@@ -60,7 +62,7 @@ export function Directory({
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<Filter>("all");
   const [country, setCountry] = useState<string | null>(null);
-  const [sort, setSort] = useState<SortKey>("score");
+  const [sort, setSort] = useState<SortKey>("contribs");
 
   const roleGroups = useMemo(() => {
     const judges = participants.filter((p) => p.role === "judge");
@@ -132,10 +134,8 @@ export function Directory({
             </h1>
             <p className="mt-3 text-[15px] text-text-soft leading-relaxed max-w-xl">
               Unofficial directory of {roleGroups.people.length} builders across
-              {" "}{countries.length}{" "}countries. Each profile is scored on a
-              transparent formula over public GitHub activity — sort, filter,
-              search, reach out. Judges &amp; community mentors are listed at the
-              top.
+              {" "}{countries.length}{" "}countries — sort, filter, search,
+              reach out. Judges &amp; community mentors are listed at the top.
             </p>
 
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-1 text-[12px] font-mono text-muted tabular-nums">
@@ -163,6 +163,7 @@ export function Directory({
               )}
             </div>
 
+            {/* "how the score works" formula panel — hidden for now per community feedback.
             <details className="mt-4 text-[11px] font-mono text-muted group max-w-md">
               <summary className="cursor-pointer hover:text-foreground select-none list-none flex items-center gap-1">
                 <span className="transition group-open:rotate-90 inline-block">›</span>
@@ -179,6 +180,7 @@ export function Directory({
 score = min(100, 100 × raw / p99(raw))`}
               </pre>
             </details>
+            */}
           </div>
 
           <WorldMap countries={countries} />
