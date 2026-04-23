@@ -1,0 +1,5864 @@
+{
+  "id": "1776966095809",
+  "slug": "ama-2-michael-cohen",
+  "vimeo_id": "1185954856",
+  "vimeo_url": "https://vimeo.com/1185954856",
+  "title": "AMA #2 with Michael Cohen",
+  "duration_seconds": 3589,
+  "thumbnail_url": null,
+  "raw_cues": [
+    {
+      "start": 21.4,
+      "end": 24.96,
+      "text": "Hey everyone, it's Jason again from the community team here at Anthropic."
+    },
+    {
+      "start": 25.48,
+      "end": 29.16,
+      "text": "Happy Thursday. Happy nearly halfway point of the hackathon."
+    },
+    {
+      "start": 29.42,
+      "end": 32.32,
+      "text": "It's been awesome to see everyone in the Discord chatting."
+    },
+    {
+      "start": 32.82,
+      "end": 36.02,
+      "text": "Really awesome to see the mentors jumping in, helping a lot of you as well."
+    },
+    {
+      "start": 36.68,
+      "end": 38.72,
+      "text": "Today, though, we're talking about Claude Managed Agents."
+    },
+    {
+      "start": 39.3,
+      "end": 43.04,
+      "text": "Obviously, this is one of the special prizes that we have for the hackathon."
+    },
+    {
+      "start": 43.08,
+      "end": 46.54,
+      "text": "It's a feature we released, I believe, a couple of weeks ago, two, three weeks ago,"
+    },
+    {
+      "start": 46.58,
+      "end": 46.88,
+      "text": "or so."
+    },
+    {
+      "start": 48.14,
+      "end": 51.12,
+      "text": "A lot of excitement, a lot of buzz. But we've also gotten a lot of questions of"
+    },
+    {
+      "start": 51.18,
+      "end": 54.76,
+      "text": "like, what the heck is it? How do I use it? How can I take advantage of it?"
+    },
+    {
+      "start": 55.7,
+      "end": 59.34,
+      "text": "So today, we're really fortunate to have Michael Cohen, a member of the technical"
+    },
+    {
+      "start": 59.44,
+      "end": 63.43,
+      "text": "staff who works on Claude Managed Agents, to explain the feature"
+    },
+    {
+      "start": 63.48,
+      "end": 67.38,
+      "text": "to us, how it can be helpful for your hackathon project, how to use it."
+    },
+    {
+      "start": 67.78,
+      "end": 71.619,
+      "text": "He's going to share some slides, do a little walkthrough. You know the jam."
+    },
+    {
+      "start": 71.68,
+      "end": 74.54,
+      "text": "As part of this, ask questions in the comments."
+    },
+    {
+      "start": 74.62,
+      "end": 77.52,
+      "text": "I'm going to be in the chat again, so if you have questions for Michael, drop them"
+    },
+    {
+      "start": 77.56,
+      "end": 80.58,
+      "text": "in there. I will interrupt him, pepper him with your questions."
+    },
+    {
+      "start": 80.64,
+      "end": 84.6,
+      "text": "So, let's make this as interactive as possible, and make sure that we"
+    },
+    {
+      "start": 84.66,
+      "end": 87.82,
+      "text": "can equip you guys to start using Claude Managed Agents for the rest of the"
+    },
+    {
+      "start": 87.88,
+      "end": 88.28,
+      "text": "hackathon."
+    },
+    {
+      "start": 89.94,
+      "end": 92.9,
+      "text": "So yeah, without further ado, Michael, great to have you here. Thanks for joining."
+    },
+    {
+      "start": 93.46,
+      "end": 97.2,
+      "text": "Yeah. Thanks for having me, Jason. I'm really excited to be here."
+    },
+    {
+      "start": 98.3,
+      "end": 101.76,
+      "text": "So yeah. I'm Michael. I'm a member of the technical staff here at Anthropic."
+    },
+    {
+      "start": 102.1,
+      "end": 104.75,
+      "text": "I work on our developer APIs,"
+    },
+    {
+      "start": 105.84,
+      "end": 109.75,
+      "text": "and really the thing that I would love to talk to you all about today is Claude"
+    },
+    {
+      "start": 109.8,
+      "end": 111.92,
+      "text": "Managed Agents, like Jason teed up."
+    },
+    {
+      "start": 112.88,
+      "end": 116.72,
+      "text": "A new kind of set of developer tools and APIs that we released a"
+    },
+    {
+      "start": 116.78,
+      "end": 117.4,
+      "text": "couple of weeks ago,"
+    },
+    {
+      "start": 118.34,
+      "end": 122.1,
+      "text": "that should make it really, really easy for developers like yourselves to be able"
+    },
+    {
+      "start": 122.2,
+      "end": 122.94,
+      "text": "to"
+    },
+    {
+      "start": 123.8,
+      "end": 125,
+      "text": "take"
+    },
+    {
+      "start": 126.28,
+      "end": 127.53,
+      "text": "all the primitives that we offer and"
+    },
+    {
+      "start": 128.62,
+      "end": 132.48,
+      "text": "go live with any agentic application that you build a lot more"
+    },
+    {
+      "start": 132.52,
+      "end": 135.6,
+      "text": "quickly and easily without having to worry about some of the"
+    },
+    {
+      "start": 135.9,
+      "end": 139.74,
+      "text": "lower-level infrastructure work that is required with deploying and running"
+    },
+    {
+      "start": 140.18,
+      "end": 141.42,
+      "text": "agentic applications at scale."
+    },
+    {
+      "start": 142.34,
+      "end": 142.76,
+      "text": "So,"
+    },
+    {
+      "start": 144.1,
+      "end": 147.6,
+      "text": "a little bit of an agenda of what I'll go over for the next hour or so."
+    },
+    {
+      "start": 149.28,
+      "end": 153.19,
+      "text": "I will just give you a quick overview of Claude Managed Agents, the primitives that"
+    },
+    {
+      "start": 153.2,
+      "end": 156.85,
+      "text": "we offer, how they all kind of connect together, and what makes them"
+    },
+    {
+      "start": 157.3,
+      "end": 161.04,
+      "text": "so great for you to be able to use. And then I will"
+    },
+    {
+      "start": 161.14,
+      "end": 162.72,
+      "text": "transition over and show you a live--"
+    },
+    {
+      "start": 163.84,
+      "end": 165.26,
+      "text": "I'll just live create"
+    },
+    {
+      "start": 166.34,
+      "end": 168.48,
+      "text": "a quick application that I"
+    },
+    {
+      "start": 169.44,
+      "end": 170.54,
+      "text": "will vibe code together."
+    },
+    {
+      "start": 171.68,
+      "end": 175.56,
+      "text": "And then, at the end or throughout, feel free"
+    },
+    {
+      "start": 175.6,
+      "end": 179.28,
+      "text": "to ask questions and interrupt me or anything that's needed"
+    },
+    {
+      "start": 179.58,
+      "end": 181.06,
+      "text": "in order for me to make myself clear."
+    },
+    {
+      "start": 182.22,
+      "end": 184.62,
+      "text": "Cool. So, what is Claude Managed Agents?"
+    },
+    {
+      "start": 185.54,
+      "end": 189.17,
+      "text": "The idea behind Claude Managed Agents is that we wanted to provide our customers,"
+    },
+    {
+      "start": 189.44,
+      "end": 189.94,
+      "text": "developers,"
+    },
+    {
+      "start": 190.8,
+      "end": 194.72,
+      "text": "with foundational infrastructure that scales with the work that they"
+    },
+    {
+      "start": 194.76,
+      "end": 195.66,
+      "text": "want to do."
+    },
+    {
+      "start": 196.78,
+      "end": 200.66,
+      "text": "Building agents is difficult, and is"
+    },
+    {
+      "start": 200.7,
+      "end": 204.69,
+      "text": "only getting more difficult over time as new innovations are discovered"
+    },
+    {
+      "start": 204.78,
+      "end": 208.76,
+      "text": "and what type of agent harnesses and architectures are working"
+    },
+    {
+      "start": 208.82,
+      "end": 209.06,
+      "text": "best."
+    },
+    {
+      "start": 209.96,
+      "end": 213.46,
+      "text": "And also, the process of deploying and running these things at scale"
+    },
+    {
+      "start": 214.3,
+      "end": 216.54,
+      "text": "is also just non-trivial and difficult."
+    },
+    {
+      "start": 217.02,
+      "end": 218.8,
+      "text": "We've experienced this internally at Anthropic."
+    },
+    {
+      "start": 219.12,
+      "end": 220.67,
+      "text": "Many of our customers have experienced that as well."
+    },
+    {
+      "start": 221.1,
+      "end": 224.36,
+      "text": "So we wanted to be able to help our customers"
+    },
+    {
+      "start": 225.9,
+      "end": 229.68,
+      "text": "scale themselves a little bit beyond having to worry about all these"
+    },
+    {
+      "start": 230.02,
+      "end": 233.829,
+      "text": "infrastructure pieces, so that they can focus on what makes their product their"
+    },
+    {
+      "start": 233.84,
+      "end": 237.81,
+      "text": "product, instead of focusing on infra or focusing on a lot of"
+    },
+    {
+      "start": 237.86,
+      "end": 241.829,
+      "text": "lower-level details. So, in terms of the core primitives that"
+    },
+    {
+      "start": 241.86,
+      "end": 245.74,
+      "text": "we offer, we offer an agent harness that we built,"
+    },
+    {
+      "start": 247.06,
+      "end": 250.78,
+      "text": "and that agent with Claude is given"
+    },
+    {
+      "start": 250.86,
+      "end": 254.46,
+      "text": "access to a sandbox container where Claude can do"
+    },
+    {
+      "start": 254.74,
+      "end": 255.34,
+      "text": "interesting work."
+    },
+    {
+      "start": 256.7,
+      "end": 260.56,
+      "text": "That container can be loaded with files and with skills and with GitHub"
+    },
+    {
+      "start": 260.601,
+      "end": 264.33,
+      "text": "repositories in order for Claude to be able to do whatever it is that you're asking"
+    },
+    {
+      "start": 264.36,
+      "end": 267.52,
+      "text": "it to do or whatever your end users might ask it to do."
+    },
+    {
+      "start": 268.56,
+      "end": 272.16,
+      "text": "We have some primitives in place for credential"
+    },
+    {
+      "start": 272.17,
+      "end": 274.42,
+      "text": "management in a way that"
+    },
+    {
+      "start": 275.3,
+      "end": 279.29,
+      "text": "keeps the actual credentials away from Claude itself, so it never"
+    },
+    {
+      "start": 279.52,
+      "end": 282.82,
+      "text": "has any kind of risks around data exfiltration."
+    },
+    {
+      "start": 283.94,
+      "end": 287.8,
+      "text": "But is still usable by the model, specifically for MCP server connectivity."
+    },
+    {
+      "start": 288.54,
+      "end": 289.7,
+      "text": "I'll go over that in a little bit."
+    },
+    {
+      "start": 290.86,
+      "end": 294.49,
+      "text": "We handle all of the details around tool execution,"
+    },
+    {
+      "start": 294.62,
+      "end": 298.19,
+      "text": "handling long-running tools, and"
+    },
+    {
+      "start": 298.54,
+      "end": 301.74,
+      "text": "connecting to MCP servers for executing those tools."
+    },
+    {
+      "start": 302.2,
+      "end": 303.69,
+      "text": "Any of the finer details around"
+    },
+    {
+      "start": 305.2,
+      "end": 308.8,
+      "text": "some things that people run into when they develop harnesses around the tool"
+    },
+    {
+      "start": 308.86,
+      "end": 312.18,
+      "text": "outputs being too long or taking too long or anything like"
+    },
+    {
+      "start": 312.24,
+      "end": 316.14,
+      "text": "that. Some permission policies for those tools so that your own"
+    },
+    {
+      "start": 316.18,
+      "end": 318.95,
+      "text": "end users can have a human-in-the-loop type"
+    },
+    {
+      "start": 319.5,
+      "end": 323.07,
+      "text": "confirmations of the tools before they execute, so that they can"
+    },
+    {
+      "start": 323.08,
+      "end": 326.32,
+      "text": "reject anything that they see that might be dangerous."
+    },
+    {
+      "start": 326.84,
+      "end": 330.67,
+      "text": "We also handle some automatic context management on your behalf, and"
+    },
+    {
+      "start": 331,
+      "end": 334.94,
+      "text": "all of the nitty-gritty of retries, error recovery, checkpointing the"
+    },
+    {
+      "start": 334.98,
+      "end": 338.76,
+      "text": "sandboxes to make sure that their state is recovered."
+    },
+    {
+      "start": 338.8,
+      "end": 341.68,
+      "text": "Everything along those lines in terms of the harness and infrastructure."
+    },
+    {
+      "start": 342.92,
+      "end": 346.66,
+      "text": "And then the primitives that we offer are really, when I say building"
+    },
+    {
+      "start": 346.72,
+      "end": 350.599,
+      "text": "block, I really mean it. You can use whatever you need, dump the rest."
+    },
+    {
+      "start": 351,
+      "end": 354.62,
+      "text": "You can build on top of it to make it a lot more customized for your"
+    },
+    {
+      "start": 354.66,
+      "end": 355.02,
+      "text": "needs."
+    },
+    {
+      "start": 355.9,
+      "end": 359.44,
+      "text": "It's really, really powerful, the set of things that we put together when"
+    },
+    {
+      "start": 359.68,
+      "end": 363.22,
+      "text": "combined as a total.In terms of the"
+    },
+    {
+      "start": 363.52,
+      "end": 364.82,
+      "text": "core resources that we offer,"
+    },
+    {
+      "start": 365.7,
+      "end": 369.62,
+      "text": "we have the agent resource, which is where you might define the system prompt, the"
+    },
+    {
+      "start": 369.66,
+      "end": 371.09,
+      "text": "model that you want to use,"
+    },
+    {
+      "start": 372.38,
+      "end": 376.3,
+      "text": "the skills you want that agent to have, and the list of tools that you might"
+    },
+    {
+      "start": 376.34,
+      "end": 377.06,
+      "text": "want to connect it to."
+    },
+    {
+      "start": 378.54,
+      "end": 381.48,
+      "text": "The environment itself is like a template for"
+    },
+    {
+      "start": 383.02,
+      "end": 384.88,
+      "text": "how you want the containers to operate."
+    },
+    {
+      "start": 385.32,
+      "end": 389.22,
+      "text": "You can control the network egress policy in order to"
+    },
+    {
+      "start": 389.24,
+      "end": 392.55,
+      "text": "restrict certain external websites"
+    },
+    {
+      "start": 393.5,
+      "end": 397.02,
+      "text": "if you have security needs, as well as controlling which"
+    },
+    {
+      "start": 397.06,
+      "end": 401.04,
+      "text": "packages from a variety of various package managers like Pip and"
+    },
+    {
+      "start": 401.14,
+      "end": 401.54,
+      "text": "npm"
+    },
+    {
+      "start": 402.38,
+      "end": 405.42,
+      "text": "are auto-installed in your containers as they kind of"
+    },
+    {
+      "start": 405.46,
+      "end": 408.56,
+      "text": "initialize. And then there's the session itself, which is really just"
+    },
+    {
+      "start": 409.36,
+      "end": 413.04,
+      "text": "effectively a conversation or an event stream between a user"
+    },
+    {
+      "start": 413.2,
+      "end": 417.18,
+      "text": "and Claude itself within the harness, where the user can"
+    },
+    {
+      "start": 417.24,
+      "end": 420.92,
+      "text": "ask it to go do X, and Claude will then proceed to use the"
+    },
+    {
+      "start": 420.96,
+      "end": 424.14,
+      "text": "sandbox and the tools that we provide it and the tools that you provide it"
+    },
+    {
+      "start": 424.66,
+      "end": 426.9,
+      "text": "until it accomplishes that task."
+    },
+    {
+      "start": 427.82,
+      "end": 430.86,
+      "text": "And we take care of all of the state management on your behalf so that you don't"
+    },
+    {
+      "start": 430.88,
+      "end": 433.84,
+      "text": "really have to worry about some of the finer details there, and it's all available"
+    },
+    {
+      "start": 433.88,
+      "end": 434.139,
+      "text": "for you."
+    },
+    {
+      "start": 435.34,
+      "end": 439.06,
+      "text": "And then, yeah, we have a very verbose"
+    },
+    {
+      "start": 439.16,
+      "end": 439.94,
+      "text": "and"
+    },
+    {
+      "start": 440.84,
+      "end": 444.69,
+      "text": "feature-rich event stream of different types of events, which I'll go over in a"
+    },
+    {
+      "start": 444.92,
+      "end": 448.68,
+      "text": "bit, that really allow you to customize the overall"
+    },
+    {
+      "start": 448.72,
+      "end": 452.04,
+      "text": "application or product that you're building to suit the needs of"
+    },
+    {
+      "start": 452.72,
+      "end": 453.22,
+      "text": "that product."
+    },
+    {
+      "start": 454.4,
+      "end": 457.32,
+      "text": "And then separately from the API endpoints and the developer primitives that we"
+    },
+    {
+      "start": 457.4,
+      "end": 457.58,
+      "text": "offer,"
+    },
+    {
+      "start": 458.54,
+      "end": 462.41,
+      "text": "our developer console also has some really nice tracing views and"
+    },
+    {
+      "start": 462.44,
+      "end": 466.33,
+      "text": "management views in order for you to go and modify and work with things"
+    },
+    {
+      "start": 466.36,
+      "end": 470.18,
+      "text": "as needed. And we also stuck a Ask Claude button in there to make it"
+    },
+    {
+      "start": 470.2,
+      "end": 474.16,
+      "text": "really easy to debug when things are going wrong, if things are going"
+    },
+    {
+      "start": 474.18,
+      "end": 475.94,
+      "text": "wrong. And I'll go over those in a little bit as well."
+    },
+    {
+      "start": 477.4,
+      "end": 479.22,
+      "text": "Michael, got our first question in the chat."
+    },
+    {
+      "start": 479.23,
+      "end": 479.23,
+      "text": "Yeah."
+    },
+    {
+      "start": 479.6,
+      "end": 483.53,
+      "text": "Lily Zhong was wondering, for agents running over hours, over days,"
+    },
+    {
+      "start": 483.62,
+      "end": 487.48,
+      "text": "or even always on, what is the best way to handle context on"
+    },
+    {
+      "start": 487.54,
+      "end": 490.929,
+      "text": "long horizon? Is this better state management, maybe an example,"
+    },
+    {
+      "start": 491.18,
+      "end": 492.86,
+      "text": "compaction or better external state?"
+    },
+    {
+      "start": 493.95,
+      "end": 497.83,
+      "text": "That's a really good question. So we, for now, take care of"
+    },
+    {
+      "start": 497.84,
+      "end": 501.32,
+      "text": "context management on your behalf, and we will effectively do something along the"
+    },
+    {
+      "start": 501.34,
+      "end": 504.86,
+      "text": "lines of auto-context management whenever the context window gets too"
+    },
+    {
+      "start": 504.9,
+      "end": 508.85,
+      "text": "large. At the moment, I believe that for all the models that we support, this is"
+    },
+    {
+      "start": 509.64,
+      "end": 512.369,
+      "text": "around the one million token context window."
+    },
+    {
+      "start": 513.56,
+      "end": 517.24,
+      "text": "And we're actually currently working on different alternative context"
+    },
+    {
+      "start": 517.28,
+      "end": 521.04,
+      "text": "management strategies that are alternatives to compaction that will"
+    },
+    {
+      "start": 521.06,
+      "end": 524.201,
+      "text": "hopefully make things even better and perform even better."
+    },
+    {
+      "start": 524.52,
+      "end": 526.79,
+      "text": "We just want to make sure that everything that we roll out is,"
+    },
+    {
+      "start": 527.64,
+      "end": 530.94,
+      "text": "so to speak, state-of-the-art and as advanced as possible so that you don't have to"
+    },
+    {
+      "start": 531.04,
+      "end": 534.04,
+      "text": "worry about things like that. Does that answer the question?"
+    },
+    {
+      "start": 535.24,
+      "end": 537.22,
+      "text": "Lily will let us know if that answered her question."
+    },
+    {
+      "start": 537.44,
+      "end": 537.45,
+      "text": "Okay."
+    },
+    {
+      "start": 537.96,
+      "end": 541.26,
+      "text": "One more question that this may be for your live build session, but"
+    },
+    {
+      "start": 541.28,
+      "end": 542.86,
+      "text": "UnicornFairy1 was wondering,"
+    },
+    {
+      "start": 543.78,
+      "end": 547.32,
+      "text": "can we create, update, monitor, edit, start, stop, manage agents"
+    },
+    {
+      "start": 547.4,
+      "end": 548,
+      "text": "programmatically?"
+    },
+    {
+      "start": 548.72,
+      "end": 549.42,
+      "text": "Yes, you can."
+    },
+    {
+      "start": 550.82,
+      "end": 554.76,
+      "text": "When I say developer primitives, I mean APIs and the SDKs that we roll"
+    },
+    {
+      "start": 554.8,
+      "end": 558.3,
+      "text": "out for you. I'll show you in a little bit when I actually open up my VS"
+    },
+    {
+      "start": 558.34,
+      "end": 561.68,
+      "text": "Code. But yes, everything listed are things that are"
+    },
+    {
+      "start": 561.7,
+      "end": 564.18,
+      "text": "possible. We have APIs for them all."
+    },
+    {
+      "start": 564.22,
+      "end": 568.02,
+      "text": "And maybe I'll even do a little bit of a quick walkthrough of our developer docs so"
+    },
+    {
+      "start": 568.08,
+      "end": 569.46,
+      "text": "that everything is a little bit clearer."
+    },
+    {
+      "start": 571.3,
+      "end": 571.6,
+      "text": "Awesome."
+    },
+    {
+      "start": 572.429,
+      "end": 576.18,
+      "text": "Cool. So yeah, in terms of the core building blocks and what you might"
+    },
+    {
+      "start": 576.3,
+      "end": 578.96,
+      "text": "do as a developer using Claude Managed Agents,"
+    },
+    {
+      "start": 579.92,
+      "end": 583.52,
+      "text": "the first two things that you might want to do are define the agent spec,"
+    },
+    {
+      "start": 584.5,
+      "end": 588,
+      "text": "and define the environment, according to some of the things that I listed and that"
+    },
+    {
+      "start": 588.02,
+      "end": 588.6,
+      "text": "are listed here."
+    },
+    {
+      "start": 589.56,
+      "end": 593.54,
+      "text": "I would call these more one-time actions, meaning"
+    },
+    {
+      "start": 593.64,
+      "end": 597.48,
+      "text": "you probably don't need to create an agent every single time that your"
+    },
+    {
+      "start": 597.68,
+      "end": 600.66,
+      "text": "end user clicks New Chat or Kick off Agent."
+    },
+    {
+      "start": 601.94,
+      "end": 605.649,
+      "text": "The idea behind the agent and environment specs is that you create them once,"
+    },
+    {
+      "start": 605.8,
+      "end": 609.58,
+      "text": "maybe a handful of times, and configure them on a per-need basis."
+    },
+    {
+      "start": 609.62,
+      "end": 610.09,
+      "text": "So if you"
+    },
+    {
+      "start": 610.9,
+      "end": 613.06,
+      "text": "need two different system prompts, then you might want to have two different"
+    },
+    {
+      "start": 613.1,
+      "end": 616.04,
+      "text": "agents, but you don't really need to create one every single time from scratch."
+    },
+    {
+      "start": 616.86,
+      "end": 618.28,
+      "text": "And the nice thing about that is that"
+    },
+    {
+      "start": 619.2,
+      "end": 622.179,
+      "text": "for your product, if you want your agent to talk like a pirate, you"
+    },
+    {
+      "start": 623.4,
+      "end": 627.12,
+      "text": "should only really define that once and then keep using that same agent"
+    },
+    {
+      "start": 627.84,
+      "end": 631.46,
+      "text": "by its ID over and over again across a variety of different sessions."
+    },
+    {
+      "start": 632.32,
+      "end": 633.56,
+      "text": "And the same applies for the environment."
+    },
+    {
+      "start": 633.86,
+      "end": 637.67,
+      "text": "You probably don't need to constantly reconfigure that the environment has this"
+    },
+    {
+      "start": 637.76,
+      "end": 639.96,
+      "text": "network allow list and these pre-installed tools."
+    },
+    {
+      "start": 640.28,
+      "end": 642.02,
+      "text": "You could just define that once and then use it again."
+    },
+    {
+      "start": 642.92,
+      "end": 644.74,
+      "text": "And I'll show off what that looks like in a little bit."
+    },
+    {
+      "start": 645.84,
+      "end": 649.18,
+      "text": "And then once you have those two things, you can just start creating and"
+    },
+    {
+      "start": 649.3,
+      "end": 652.96,
+      "text": "interacting with sessions. Each session, you might want to upload"
+    },
+    {
+      "start": 653,
+      "end": 655.66,
+      "text": "various files and GitHub repositories too."
+    },
+    {
+      "start": 656.56,
+      "end": 660.43,
+      "text": "You can upload new files as the session is running,"
+    },
+    {
+      "start": 661.54,
+      "end": 665.52,
+      "text": "and really make every session kind of unique to whatever it is"
+    },
+    {
+      "start": 665.56,
+      "end": 666.68,
+      "text": "that your end users are doing."
+    },
+    {
+      "start": 667.92,
+      "end": 671.64,
+      "text": "And a really nice additional thing is that"
+    },
+    {
+      "start": 673.2,
+      "end": 677.1,
+      "text": "on the session layer is where you add the credentials that might be"
+    },
+    {
+      "start": 677.14,
+      "end": 681.04,
+      "text": "needed for an MCP server. So each one of your end users can have"
+    },
+    {
+      "start": 681.06,
+      "end": 684.3,
+      "text": "their own set of credentials that are associated with them, and you just load those"
+    },
+    {
+      "start": 684.36,
+      "end": 685,
+      "text": "into the session."
+    },
+    {
+      "start": 685.98,
+      "end": 689.8,
+      "text": "There's a vault ID that you can provide, and I'll show that in a little"
+    },
+    {
+      "start": 689.86,
+      "end": 690.06,
+      "text": "bit."
+    },
+    {
+      "start": 691.14,
+      "end": 692.2,
+      "text": "And from there,"
+    },
+    {
+      "start": 693.4,
+      "end": 697.2,
+      "text": "that session is configured with that end user's MCP server"
+    },
+    {
+      "start": 697.22,
+      "end": 701.2,
+      "text": "credentials. So if that user is using Linear"
+    },
+    {
+      "start": 701.24,
+      "end": 702.1,
+      "text": "or using Slack,"
+    },
+    {
+      "start": 703.9,
+      "end": 707.88,
+      "text": "Claude will have the ability to use their Linear MCP credentials instead"
+    },
+    {
+      "start": 707.92,
+      "end": 711.5,
+      "text": "of you having to worry about setting these up for each one of your own end users,"
+    },
+    {
+      "start": 712.32,
+      "end": 716.12,
+      "text": "which I can state from experience is not a very fun thing"
+    },
+    {
+      "start": 716.16,
+      "end": 719.71,
+      "text": "to have to do. And then from there, once the session is kind of started and"
+    },
+    {
+      "start": 719.72,
+      "end": 723.456,
+      "text": "created, you can just startEmitting, sending events to it,"
+    },
+    {
+      "start": 723.596,
+      "end": 727.056,
+      "text": "and essentially getting a stream of those events back to"
+    },
+    {
+      "start": 727.136,
+      "end": 730.296,
+      "text": "you. This is kind of like any chat on"
+    },
+    {
+      "start": 730.516,
+      "end": 733.656,
+      "text": "Claude.ai, Claude Code, any LLM application."
+    },
+    {
+      "start": 734.836,
+      "end": 737.816,
+      "text": "And in addition to the user events,"
+    },
+    {
+      "start": 738.836,
+      "end": 742.316,
+      "text": "like the text that they submit and the text that Claude sends back, there's a bunch"
+    },
+    {
+      "start": 742.356,
+      "end": 745.636,
+      "text": "of other events as well around like state changes,"
+    },
+    {
+      "start": 746.316,
+      "end": 748.796,
+      "text": "tool calls, permission requests."
+    },
+    {
+      "start": 748.876,
+      "end": 752.236,
+      "text": "All those things are kind of already baked into the events that we have today."
+    },
+    {
+      "start": 754.396,
+      "end": 756.076,
+      "text": "Breaking down what those events are."
+    },
+    {
+      "start": 756.736,
+      "end": 760.636,
+      "text": "The two kind of core things that you as a developer might care about are"
+    },
+    {
+      "start": 760.816,
+      "end": 762.256,
+      "text": "the user events and the agent events."
+    },
+    {
+      "start": 763.016,
+      "end": 766.976,
+      "text": "Each event has a namespace kind of prefix so that it's a little bit easier for"
+    },
+    {
+      "start": 767.016,
+      "end": 769.596,
+      "text": "you to understand how it's intended to be used."
+    },
+    {
+      "start": 770.016,
+      "end": 772.096,
+      "text": "So you'd have the typical user messages."
+    },
+    {
+      "start": 772.156,
+      "end": 776.136,
+      "text": "Those can contain text, image, document, content blocks, the same"
+    },
+    {
+      "start": 776.176,
+      "end": 778.676,
+      "text": "way that the Messages API does today."
+    },
+    {
+      "start": 779.276,
+      "end": 783.036,
+      "text": "You can send an interrupt on behalf of a user so that if, in your application,"
+    },
+    {
+      "start": 783.156,
+      "end": 787.126,
+      "text": "pressing escape or clicking the stop button is intended to stop Claude from"
+    },
+    {
+      "start": 787.256,
+      "end": 790.376,
+      "text": "working, you can just emit one of these events, and that will kind of stop the"
+    },
+    {
+      "start": 790.396,
+      "end": 794.176,
+      "text": "event stream, which I believe was one of the things that we were asked"
+    },
+    {
+      "start": 794.216,
+      "end": 794.456,
+      "text": "about."
+    },
+    {
+      "start": 796.076,
+      "end": 796.596,
+      "text": "And then"
+    },
+    {
+      "start": 797.516,
+      "end": 801.136,
+      "text": "as the user or client of this product, you can"
+    },
+    {
+      "start": 801.196,
+      "end": 805.096,
+      "text": "also round trip custom tool results if you"
+    },
+    {
+      "start": 805.156,
+      "end": 807.876,
+      "text": "added custom tools to your session and agents."
+    },
+    {
+      "start": 808.536,
+      "end": 812.076,
+      "text": "Those are usually tools that you probably have some code written around that you"
+    },
+    {
+      "start": 812.096,
+      "end": 813.496,
+      "text": "want to handle in your specific way."
+    },
+    {
+      "start": 813.896,
+      "end": 817.236,
+      "text": "Maybe they access your database and you don't want to expose the database to the"
+    },
+    {
+      "start": 817.256,
+      "end": 821.036,
+      "text": "internet. So that's kind of how you might want to give Claude access to"
+    },
+    {
+      "start": 821.076,
+      "end": 822.776,
+      "text": "something while keeping things very, very safe."
+    },
+    {
+      "start": 823.956,
+      "end": 825.596,
+      "text": "And you can also configure"
+    },
+    {
+      "start": 826.636,
+      "end": 830.056,
+      "text": "permission policies on a per tool basis"
+    },
+    {
+      "start": 830.616,
+      "end": 833.216,
+      "text": "for the, so to speak, server tools."
+    },
+    {
+      "start": 834.236,
+      "end": 835.615,
+      "text": "And I'll go over those in a little bit."
+    },
+    {
+      "start": 836.416,
+      "end": 840.026,
+      "text": "Or the MCP tools themselves. So you might want to specify that"
+    },
+    {
+      "start": 840.456,
+      "end": 843.056,
+      "text": "the linear delete project tool"
+    },
+    {
+      "start": 844.616,
+      "end": 848.116,
+      "text": "needs explicit confirmation from the end user before it can be executed."
+    },
+    {
+      "start": 848.596,
+      "end": 851.445,
+      "text": "That's when you would want to send something like a tool confirmation."
+    },
+    {
+      "start": 852.296,
+      "end": 856.136,
+      "text": "But you might want the read issue tool"
+    },
+    {
+      "start": 856.216,
+      "end": 856.456,
+      "text": "to"
+    },
+    {
+      "start": 857.376,
+      "end": 860.976,
+      "text": "be something that is automatically"
+    },
+    {
+      "start": 861.016,
+      "end": 864.996,
+      "text": "executed because you know that is a safe operation. It's a read-only."
+    },
+    {
+      "start": 865.316,
+      "end": 868.696,
+      "text": "Not much can go wrong there, so just let it happen."
+    },
+    {
+      "start": 869.516,
+      "end": 872.056,
+      "text": "We also have this kind of experimental,"
+    },
+    {
+      "start": 873.496,
+      "end": 874.436,
+      "text": "not yet public"
+    },
+    {
+      "start": 875.356,
+      "end": 876.476,
+      "text": "concept called Outcomes."
+    },
+    {
+      "start": 877.316,
+      "end": 881.216,
+      "text": "And these are really a way for us to give Claude or for you to give Claude a"
+    },
+    {
+      "start": 881.236,
+      "end": 884.296,
+      "text": "rubric that it can use in order to"
+    },
+    {
+      "start": 884.696,
+      "end": 888.076,
+      "text": "self-verify that it was doing the thing that you wanted it to do to define an"
+    },
+    {
+      "start": 888.136,
+      "end": 891.696,
+      "text": "outcome for it. And when you use that, you can actually"
+    },
+    {
+      "start": 892.396,
+      "end": 896.296,
+      "text": "see that Claude will kick off its own kind of self-verification loop"
+    },
+    {
+      "start": 896.336,
+      "end": 898.396,
+      "text": "to make sure that that rubric you provided it"
+    },
+    {
+      "start": 898.516,
+      "end": 902.116,
+      "text": "is being met with the changes that it made."
+    },
+    {
+      "start": 903.116,
+      "end": 906.396,
+      "text": "And it's really, really cool to see this happen live because you can see Claude"
+    },
+    {
+      "start": 906.436,
+      "end": 908.856,
+      "text": "kind of self-correct when it notices that a mistake was made."
+    },
+    {
+      "start": 909.576,
+      "end": 911.976,
+      "text": "It's a really, really powerful primitive."
+    },
+    {
+      "start": 912.696,
+      "end": 915.206,
+      "text": "We're still kind of working out some of the kinks there, but we will be releasing"
+    },
+    {
+      "start": 915.256,
+      "end": 918.916,
+      "text": "it very, very soon. And then in terms of events that the"
+    },
+    {
+      "start": 918.976,
+      "end": 922.476,
+      "text": "agent can emit that you might be able to see in the event stream in"
+    },
+    {
+      "start": 923.036,
+      "end": 923.946,
+      "text": "our APIs,"
+    },
+    {
+      "start": 924.956,
+      "end": 928.796,
+      "text": "you'd have the typical agent.message, which is just Claude responding to"
+    },
+    {
+      "start": 928.836,
+      "end": 932.676,
+      "text": "you or telling you something. We also emit an event whenever"
+    },
+    {
+      "start": 932.736,
+      "end": 936.576,
+      "text": "the context window gets compacted so that you understand when that happens,"
+    },
+    {
+      "start": 936.976,
+      "end": 939.936,
+      "text": "and it doesn't kind of happen behind the scenes without you kind of understanding"
+    },
+    {
+      "start": 939.976,
+      "end": 940.556,
+      "text": "it."
+    },
+    {
+      "start": 941.756,
+      "end": 944.276,
+      "text": "And then there's a bunch of tool use and tool results."
+    },
+    {
+      "start": 944.836,
+      "end": 948.686,
+      "text": "The agent.tooluse and agent.toolresults are for the, so to"
+    },
+    {
+      "start": 948.686,
+      "end": 950.836,
+      "text": "speak, native tools that we provide Claude."
+    },
+    {
+      "start": 951.496,
+      "end": 955.256,
+      "text": "These are things that Claude uses to access the container, like Bash, File"
+    },
+    {
+      "start": 955.316,
+      "end": 959.116,
+      "text": "Read, File Write, Glob, Grep, all of those kind of basic tools."
+    },
+    {
+      "start": 960.256,
+      "end": 963.955,
+      "text": "And then also Web Search and Web Fetch are also included."
+    },
+    {
+      "start": 964.016,
+      "end": 967.256,
+      "text": "Those don't go through the container, but those are also tools that you might see"
+    },
+    {
+      "start": 967.296,
+      "end": 967.976,
+      "text": "under these events."
+    },
+    {
+      "start": 969.056,
+      "end": 972.796,
+      "text": "You also will get a unique event for MCP tool use if you connected"
+    },
+    {
+      "start": 972.816,
+      "end": 973.956,
+      "text": "any MCP servers,"
+    },
+    {
+      "start": 975.116,
+      "end": 978.876,
+      "text": "as well as tool results. And then finally, if"
+    },
+    {
+      "start": 978.916,
+      "end": 982.075,
+      "text": "Claude decides to use one of the custom tools that you provided it, you'll have a"
+    },
+    {
+      "start": 982.136,
+      "end": 983.496,
+      "text": "specific event for custom tool use."
+    },
+    {
+      "start": 984.736,
+      "end": 987.596,
+      "text": "Similar to Outcomes, we're not quite ready to release our multi-agent"
+    },
+    {
+      "start": 989.516,
+      "end": 991.976,
+      "text": "feature yet, but we are working on it."
+    },
+    {
+      "start": 992.036,
+      "end": 995.706,
+      "text": "There's a couple of docs that you can read on it, and there's a private research"
+    },
+    {
+      "start": 995.756,
+      "end": 997.556,
+      "text": "preview that we're working through."
+    },
+    {
+      "start": 997.596,
+      "end": 1001.516,
+      "text": "But there's a couple of events that are emitted whenever Claude decides to talk to"
+    },
+    {
+      "start": 1001.576,
+      "end": 1005.276,
+      "text": "other agents in its session. And really, really cool to see."
+    },
+    {
+      "start": 1006.136,
+      "end": 1007.916,
+      "text": "But those are not quite,"
+    },
+    {
+      "start": 1008.836,
+      "end": 1009.956,
+      "text": "let's call it production ready yet."
+    },
+    {
+      "start": 1011.156,
+      "end": 1014.416,
+      "text": "And then moving on to, let's call it overall session events."
+    },
+    {
+      "start": 1015.316,
+      "end": 1017.696,
+      "text": "The main ones to worry about are status events."
+    },
+    {
+      "start": 1018.476,
+      "end": 1022.396,
+      "text": "You want to know when a session transitions from idle, when nothing"
+    },
+    {
+      "start": 1022.436,
+      "end": 1026.356,
+      "text": "is happening, to running, as in Claude is maybe responding"
+    },
+    {
+      "start": 1026.396,
+      "end": 1030.257,
+      "text": "to you or executing a tool or provisioning a container"
+    },
+    {
+      "start": 1030.296,
+      "end": 1031.676,
+      "text": "for you or anything along those lines."
+    },
+    {
+      "start": 1032.536,
+      "end": 1036.517,
+      "text": "Rescheduling happens if Claude ever runs into issues, if we have to"
+    },
+    {
+      "start": 1036.536,
+      "end": 1040.376,
+      "text": "retry because we might have hit a inference or sampling"
+    },
+    {
+      "start": 1040.416,
+      "end": 1040.757,
+      "text": "issue,"
+    },
+    {
+      "start": 1041.916,
+      "end": 1045.876,
+      "text": "or any sort of thing that involves us wanting to retry on your behalf in order to"
+    },
+    {
+      "start": 1045.896,
+      "end": 1046.416,
+      "text": "self-recover."
+    },
+    {
+      "start": 1047.497,
+      "end": 1050.156,
+      "text": "And then finally, if there's any sort of"
+    },
+    {
+      "start": 1050.216,
+      "end": 1052.696,
+      "text": "irrecoverable error,"
+    },
+    {
+      "start": 1053.516,
+      "end": 1056.756,
+      "text": "there will be a termination status that happens."
+    },
+    {
+      "start": 1056.996,
+      "end": 1060.936,
+      "text": "These are relatively rare. Most of the time, these will happen if you decide to"
+    },
+    {
+      "start": 1060.976,
+      "end": 1064.796,
+      "text": "delete that session. We just make sure that is known in the"
+    },
+    {
+      "start": 1066.056,
+      "end": 1069.296,
+      "text": "source of truth event log, that that is when the session was terminated because you"
+    },
+    {
+      "start": 1069.316,
+      "end": 1069.796,
+      "text": "deleted it."
+    },
+    {
+      "start": 1070.816,
+      "end": 1071.836,
+      "text": "And then there's a couple of"
+    },
+    {
+      "start": 1073.176,
+      "end": 1076.566,
+      "text": "state transitions around threads and a multi-agent coordination"
+    },
+    {
+      "start": 1077.396,
+      "end": 1079.356,
+      "text": "being created or changing statuses."
+    },
+    {
+      "start": 1080.016,
+      "end": 1081.796,
+      "text": "You shouldn't really have to worry about those as much for now."
+    },
+    {
+      "start": 1082.756,
+      "end": 1086.465,
+      "text": "And then we also have a generic session.error that"
+    },
+    {
+      "start": 1086.476,
+      "end": 1089.576,
+      "text": "usually will include richer information about what went wrong,"
+    },
+    {
+      "start": 1090.396,
+      "end": 1094.186,
+      "text": "so that you can understand and decide to react accordingly in your"
+    },
+    {
+      "start": 1094.856,
+      "end": 1098.392,
+      "text": "application.And then a couple of"
+    },
+    {
+      "start": 1098.932,
+      "end": 1102.272,
+      "text": "or one event for like outcome processing, just so that you understand when Claude"
+    },
+    {
+      "start": 1102.312,
+      "end": 1104.832,
+      "text": "is like kicking off its outcome workflow."
+    },
+    {
+      "start": 1106.212,
+      "end": 1109.192,
+      "text": "And then we also include a couple of span events."
+    },
+    {
+      "start": 1109.512,
+      "end": 1113.292,
+      "text": "These are primarily for you to be able to instrument more"
+    },
+    {
+      "start": 1113.372,
+      "end": 1116.152,
+      "text": "live, rich applications on your end."
+    },
+    {
+      "start": 1116.192,
+      "end": 1120.082,
+      "text": "So for example, you might want to know when, instead of using a"
+    },
+    {
+      "start": 1120.112,
+      "end": 1122.142,
+      "text": "tool, Claude is actually just"
+    },
+    {
+      "start": 1123.292,
+      "end": 1126.172,
+      "text": "submitting text right now. It's running inference, so to speak."
+    },
+    {
+      "start": 1126.212,
+      "end": 1130.122,
+      "text": "So we have wrappers around when that starts and ends, so that you also"
+    },
+    {
+      "start": 1130.172,
+      "end": 1133.612,
+      "text": "have a better understanding of like, okay, for this particular message that I sent,"
+    },
+    {
+      "start": 1134.452,
+      "end": 1137.452,
+      "text": "Claude really took its time. It wrote a whole novel of a response."
+    },
+    {
+      "start": 1137.952,
+      "end": 1140.352,
+      "text": "It's good for you to be able to know when these things start and ended."
+    },
+    {
+      "start": 1140.412,
+      "end": 1142.972,
+      "text": "So we just make sure to emit events for you."
+    },
+    {
+      "start": 1143.252,
+      "end": 1145.872,
+      "text": "And I'll show off a little bit of what that looks like when I show off our"
+    },
+    {
+      "start": 1145.882,
+      "end": 1149.452,
+      "text": "developer tooling. And then there's a couple of span events around outcome"
+    },
+    {
+      "start": 1149.492,
+      "end": 1151.552,
+      "text": "evaluations starting and ending."
+    },
+    {
+      "start": 1153.232,
+      "end": 1154.632,
+      "text": "Yeah, so to speak."
+    },
+    {
+      "start": 1155.472,
+      "end": 1156.012,
+      "text": "So that's more or less-"
+    },
+    {
+      "start": 1156.432,
+      "end": 1156.442,
+      "text": "Michael"
+    },
+    {
+      "start": 1156.492,
+      "end": 1156.692,
+      "text": "Yes."
+    },
+    {
+      "start": 1157.052,
+      "end": 1158.662,
+      "text": "We got a bunch of awesome questions. I want to pepper you."
+    },
+    {
+      "start": 1158.692,
+      "end": 1159.612,
+      "text": "Yes, please."
+    },
+    {
+      "start": 1161.192,
+      "end": 1164.272,
+      "text": "So, let's see. We have some questions around outcomes."
+    },
+    {
+      "start": 1164.892,
+      "end": 1167.632,
+      "text": "So Gil asked, \"Is outcome like a testing vector?\""
+    },
+    {
+      "start": 1169.852,
+      "end": 1173.572,
+      "text": "I would have to better understand what testing vector means in this context."
+    },
+    {
+      "start": 1173.672,
+      "end": 1174.712,
+      "text": "It could mean a lot of different things."
+    },
+    {
+      "start": 1175.212,
+      "end": 1178.532,
+      "text": "It is effectively a self-verification loop, right?"
+    },
+    {
+      "start": 1178.612,
+      "end": 1182.132,
+      "text": "So models are good as they are"
+    },
+    {
+      "start": 1182.172,
+      "end": 1185.092,
+      "text": "today. Model intelligence has gotten really, really good lately."
+    },
+    {
+      "start": 1186.172,
+      "end": 1189.372,
+      "text": "However, they are even better if they are given a"
+    },
+    {
+      "start": 1189.472,
+      "end": 1193.232,
+      "text": "specific rubric of like, \"Hey, in order for you to"
+    },
+    {
+      "start": 1193.292,
+      "end": 1194.912,
+      "text": "think of this task as done,"
+    },
+    {
+      "start": 1195.752,
+      "end": 1196.892,
+      "text": "these things have to be true.\""
+    },
+    {
+      "start": 1197.972,
+      "end": 1201.612,
+      "text": "And that could be literally markdown text or even just"
+    },
+    {
+      "start": 1201.832,
+      "end": 1204.792,
+      "text": "plain text of like, \"Hey, the outcome of this"
+    },
+    {
+      "start": 1205.792,
+      "end": 1209.582,
+      "text": "particular session or task that I want you to do is that"
+    },
+    {
+      "start": 1209.632,
+      "end": 1213.612,
+      "text": "the PR that I wanted you to put up is entirely green"
+    },
+    {
+      "start": 1213.652,
+      "end": 1217.132,
+      "text": "and approved. So, please make sure"
+    },
+    {
+      "start": 1217.142,
+      "end": 1220.552,
+      "text": "to keep going until all of the PR comments"
+    },
+    {
+      "start": 1220.652,
+      "end": 1224.292,
+      "text": "are addressed and the reviewers approved it."
+    },
+    {
+      "start": 1224.312,
+      "end": 1228.072,
+      "text": "But also that our integration tests succeeded.\" And if you"
+    },
+    {
+      "start": 1228.132,
+      "end": 1232.072,
+      "text": "define these things in your outcome, again, as just plain text, Claude"
+    },
+    {
+      "start": 1232.112,
+      "end": 1233.292,
+      "text": "will constantly"
+    },
+    {
+      "start": 1234.312,
+      "end": 1238.272,
+      "text": "rerun against that verification loop in order to make sure that those things are"
+    },
+    {
+      "start": 1238.312,
+      "end": 1242.132,
+      "text": "true. And it's really, really stubborn about making sure that it"
+    },
+    {
+      "start": 1242.152,
+      "end": 1245.752,
+      "text": "hits those things. So we've seen a lot of really good uplift in some of the evals"
+    },
+    {
+      "start": 1245.772,
+      "end": 1246.352,
+      "text": "that we've been running"
+    },
+    {
+      "start": 1247.212,
+      "end": 1250.932,
+      "text": "when we do this sort of pattern. So we want to be able to expose that to you"
+    },
+    {
+      "start": 1250.992,
+      "end": 1251.362,
+      "text": "more"
+    },
+    {
+      "start": 1252.892,
+      "end": 1253.312,
+      "text": "first class."
+    },
+    {
+      "start": 1254.812,
+      "end": 1258.372,
+      "text": "Awesome. A bunch more questions. So we're going to take a pause and get some of the"
+    },
+    {
+      "start": 1258.472,
+      "end": 1259.352,
+      "text": "folks' questions to you."
+    },
+    {
+      "start": 1259.872,
+      "end": 1259.952,
+      "text": "Yeah."
+    },
+    {
+      "start": 1260.932,
+      "end": 1264.592,
+      "text": "On the topic of outcomes, Onchain Intel asked,"
+    },
+    {
+      "start": 1264.841,
+      "end": 1266.912,
+      "text": "\"Is outcomes available today or wait list?"
+    },
+    {
+      "start": 1266.972,
+      "end": 1268.492,
+      "text": "How do I get access for the hackathon?\""
+    },
+    {
+      "start": 1268.852,
+      "end": 1272.072,
+      "text": "It's a really good question. I probably shouldn't have included this in my slides."
+    },
+    {
+      "start": 1272.252,
+      "end": 1275.452,
+      "text": "I apologize for kind of teasing something that we're not quite ready to share yet."
+    },
+    {
+      "start": 1275.852,
+      "end": 1278.472,
+      "text": "It is currently in research preview, which you can sign up for the wait list for."
+    },
+    {
+      "start": 1279.472,
+      "end": 1283.232,
+      "text": "Jason, I'm not sure what is our kind of process around this."
+    },
+    {
+      "start": 1283.272,
+      "end": 1287.232,
+      "text": "Maybe we can link it out later. But it will be coming very, very soon,"
+    },
+    {
+      "start": 1287.312,
+      "end": 1291.232,
+      "text": "over the next couple of weeks. I can't make any guarantees"
+    },
+    {
+      "start": 1291.292,
+      "end": 1294.692,
+      "text": "around when these things are going to be ready, unfortunately."
+    },
+    {
+      "start": 1295.352,
+      "end": 1297.412,
+      "text": "But we're very, very close."
+    },
+    {
+      "start": 1298.512,
+      "end": 1298.812,
+      "text": "Awesome."
+    },
+    {
+      "start": 1300.292,
+      "end": 1302.212,
+      "text": "Have a bunch of higher-level questions that we'll get to in a bit."
+    },
+    {
+      "start": 1302.292,
+      "end": 1304.262,
+      "text": "We'll make sure to get all your questions to Michael."
+    },
+    {
+      "start": 1304.352,
+      "end": 1307.652,
+      "text": "But on the topic of this screen right here,"
+    },
+    {
+      "start": 1309.612,
+      "end": 1313.272,
+      "text": "Onchain Intel also asked, \"Can the rubric call external APIs during"
+    },
+    {
+      "start": 1313.292,
+      "end": 1315.762,
+      "text": "verification, or is it constrained to the model's own judgment?\""
+    },
+    {
+      "start": 1318.392,
+      "end": 1320.242,
+      "text": "So the rubric itself is"
+    },
+    {
+      "start": 1321.532,
+      "end": 1323.502,
+      "text": "very bluntly just text that you provided."
+    },
+    {
+      "start": 1323.632,
+      "end": 1327.352,
+      "text": "You could provide that text as a file that you upload if that's easier for you"
+    },
+    {
+      "start": 1327.412,
+      "end": 1331.172,
+      "text": "ergonomically. But in that rubric, it's effectively"
+    },
+    {
+      "start": 1331.192,
+      "end": 1335.032,
+      "text": "instructions for the model that are very specific to, let's say, a"
+    },
+    {
+      "start": 1335.112,
+      "end": 1338.872,
+      "text": "specific part of your session. So if the entire session"
+    },
+    {
+      "start": 1339.032,
+      "end": 1340.052,
+      "text": "is maybe Claude"
+    },
+    {
+      "start": 1341.092,
+      "end": 1344.602,
+      "text": "managing somebody's personal life and fixing all their emails and stuff like that,"
+    },
+    {
+      "start": 1344.892,
+      "end": 1348.332,
+      "text": "maybe a part of it is like, yeah, in addition to fixing my emails, you also need to"
+    },
+    {
+      "start": 1348.352,
+      "end": 1352.182,
+      "text": "do my taxes. So the outcome that you might want to define as a"
+    },
+    {
+      "start": 1352.272,
+      "end": 1354.612,
+      "text": "specific event that you emit is like, hey,"
+    },
+    {
+      "start": 1355.952,
+      "end": 1357.672,
+      "text": "I don't know, until I get a"
+    },
+    {
+      "start": 1358.531,
+      "end": 1361.312,
+      "text": "response from the US government that my taxes were accepted,"
+    },
+    {
+      "start": 1362.792,
+      "end": 1365.552,
+      "text": "try to submit my taxes. Maybe that wasn't the best example."
+    },
+    {
+      "start": 1366.812,
+      "end": 1370.722,
+      "text": "But that would involve the model probably being like,"
+    },
+    {
+      "start": 1370.722,
+      "end": 1374.382,
+      "text": "\"Okay, well, I need to go to TurboTax and file in this"
+    },
+    {
+      "start": 1374.392,
+      "end": 1375.112,
+      "text": "person's"
+    },
+    {
+      "start": 1376.092,
+      "end": 1379.442,
+      "text": "information into TurboTax and submit it.\" So that would involve API calls."
+    },
+    {
+      "start": 1380.672,
+      "end": 1384.152,
+      "text": "You can specify in your outcome like, \"Hey, you should use"
+    },
+    {
+      "start": 1384.162,
+      "end": 1388.112,
+      "text": "this URL or this API in order to do so.\" But you"
+    },
+    {
+      "start": 1388.132,
+      "end": 1388.522,
+      "text": "don't have to,"
+    },
+    {
+      "start": 1389.432,
+      "end": 1393.142,
+      "text": "so to speak, deterministically add code that"
+    },
+    {
+      "start": 1393.332,
+      "end": 1397.052,
+      "text": "does that yourself. Claude will probably write some scripts for itself in order to"
+    },
+    {
+      "start": 1397.092,
+      "end": 1397.432,
+      "text": "do that."
+    },
+    {
+      "start": 1399.232,
+      "end": 1399.572,
+      "text": "Awesome."
+    },
+    {
+      "start": 1401.552,
+      "end": 1404.132,
+      "text": "A few more questions, and again, folks, we'll get all your questions to Michael"
+    },
+    {
+      "start": 1404.152,
+      "end": 1405.272,
+      "text": "over the course of the hour."
+    },
+    {
+      "start": 1406.272,
+      "end": 1409.922,
+      "text": "Daniel here asked, \"If I wire up a Claude managed agent as a"
+    },
+    {
+      "start": 1409.952,
+      "end": 1413.702,
+      "text": "gatekeeper to filter out spicy stuff, say troll images I don't want"
+    },
+    {
+      "start": 1413.812,
+      "end": 1417.372,
+      "text": "reaching my downstream image classifier agent, what actually happens on"
+    },
+    {
+      "start": 1418.512,
+      "end": 1419.392,
+      "text": "Anthropic side"
+    },
+    {
+      "start": 1420.232,
+      "end": 1422.592,
+      "text": "when the gatekeeper, quote-unquote, 'sees' that image?"
+    },
+    {
+      "start": 1423.092,
+      "end": 1427.072,
+      "text": "Does it get logged, scored, fed into anything, or does it just vanish"
+    },
+    {
+      "start": 1427.092,
+      "end": 1429.452,
+      "text": "into the void after the classification call returns?\""
+    },
+    {
+      "start": 1430.992,
+      "end": 1432.092,
+      "text": "It's a good question. So,"
+    },
+    {
+      "start": 1433.192,
+      "end": 1436.912,
+      "text": "this is kind of up to you on how you want to structure things, right?"
+    },
+    {
+      "start": 1436.972,
+      "end": 1440.702,
+      "text": "So, in order to provide Claude with that image, you can do one of two things."
+    },
+    {
+      "start": 1440.772,
+      "end": 1444.512,
+      "text": "You can either upload a file into the container sandbox that Claude has"
+    },
+    {
+      "start": 1444.612,
+      "end": 1448.082,
+      "text": "access to and say, \"Hey, Claude, there's a new file in this"
+    },
+    {
+      "start": 1448.112,
+      "end": 1451.312,
+      "text": "directory. Go take a look and tell me what you think.\""
+    },
+    {
+      "start": 1452.692,
+      "end": 1455.832,
+      "text": "And it'll do that. It'll give its response."
+    },
+    {
+      "start": 1456.752,
+      "end": 1460.562,
+      "text": "Eventually, you will probably stop interacting with that session or"
+    },
+    {
+      "start": 1461.232,
+      "end": 1464.712,
+      "text": "at which point the sandbox itself will be, so to speak,"
+    },
+    {
+      "start": 1464.752,
+      "end": 1465.292,
+      "text": "tombstoned."
+    },
+    {
+      "start": 1466.732,
+      "end": 1470.672,
+      "text": "We can revive it with a snapshot, but it's not necessary."
+    },
+    {
+      "start": 1470.772,
+      "end": 1474.732,
+      "text": "You can also explicitly delete files from that"
+    },
+    {
+      "start": 1474.752,
+      "end": 1478.332,
+      "text": "sandbox, and you can also explicitly delete"
+    },
+    {
+      "start": 1478.372,
+      "end": 1481.872,
+      "text": "files from our files API so that those things are gone forever,"
+    },
+    {
+      "start": 1482.352,
+      "end": 1486.28,
+      "text": "if that is a concern that you have.An alternative to this is that, like I"
+    },
+    {
+      "start": 1486.32,
+      "end": 1490.18,
+      "text": "said, in the user.message event, you can also submit"
+    },
+    {
+      "start": 1490.5,
+      "end": 1492.58,
+      "text": "image, so to speak, content blocks."
+    },
+    {
+      "start": 1493.34,
+      "end": 1496.94,
+      "text": "Those image content blocks are never included as"
+    },
+    {
+      "start": 1496.98,
+      "end": 1500.77,
+      "text": "files in the container. They're directly sent to Claude for it to"
+    },
+    {
+      "start": 1500.8,
+      "end": 1501.21,
+      "text": "process,"
+    },
+    {
+      "start": 1502.36,
+      "end": 1506.08,
+      "text": "and there's no file ever saved on our end when we do"
+    },
+    {
+      "start": 1506.14,
+      "end": 1506.36,
+      "text": "that."
+    },
+    {
+      "start": 1507.62,
+      "end": 1510.8,
+      "text": "We, I believe, have some policies around"
+    },
+    {
+      "start": 1511.58,
+      "end": 1515.04,
+      "text": "not retaining data. Those are available in our developer docs."
+    },
+    {
+      "start": 1515.959,
+      "end": 1519.88,
+      "text": "But that is an alternative. It comes at the cost of that"
+    },
+    {
+      "start": 1519.94,
+      "end": 1520.65,
+      "text": "image is now"
+    },
+    {
+      "start": 1521.66,
+      "end": 1523.3,
+      "text": "essentially in the context window."
+    },
+    {
+      "start": 1523.76,
+      "end": 1526.82,
+      "text": "I think that's your kind of decision on how you want to structure this sort of"
+    },
+    {
+      "start": 1526.86,
+      "end": 1527.02,
+      "text": "thing."
+    },
+    {
+      "start": 1529.48,
+      "end": 1532,
+      "text": "I have a couple more questions. I'll let you continue, and again, folks, we'll get"
+    },
+    {
+      "start": 1532.04,
+      "end": 1532.96,
+      "text": "all your questions to Michael."
+    },
+    {
+      "start": 1534.26,
+      "end": 1537.88,
+      "text": "Benj is asking, \"Is there a managed agent to manipulate other agents,"
+    },
+    {
+      "start": 1538.14,
+      "end": 1540.38,
+      "text": "even CRUD on them?\""
+    },
+    {
+      "start": 1540.92,
+      "end": 1542.84,
+      "text": "That's a really good question. Very meta."
+    },
+    {
+      "start": 1543.6,
+      "end": 1546.1,
+      "text": "We don't yet."
+    },
+    {
+      "start": 1547.44,
+      "end": 1548.939,
+      "text": "There's a bunch of,"
+    },
+    {
+      "start": 1550.66,
+      "end": 1554.56,
+      "text": "let's call it safety and security implications we want to work through"
+    },
+    {
+      "start": 1554.64,
+      "end": 1556.58,
+      "text": "before offering something like that first class."
+    },
+    {
+      "start": 1557.1,
+      "end": 1557.52,
+      "text": "However,"
+    },
+    {
+      "start": 1558.8,
+      "end": 1560.22,
+      "text": "there's nothing preventing you from"
+    },
+    {
+      "start": 1561.08,
+      "end": 1564.78,
+      "text": "creating a managed agent, giving it a bunch of tools like"
+    },
+    {
+      "start": 1565.36,
+      "end": 1569.28,
+      "text": "create agent, list agents, create session, list session,"
+    },
+    {
+      "start": 1569.52,
+      "end": 1572.52,
+      "text": "all of the tools that map to our API,"
+    },
+    {
+      "start": 1573.14,
+      "end": 1576.8,
+      "text": "and giving that session or that agent"
+    },
+    {
+      "start": 1577.28,
+      "end": 1579.04,
+      "text": "access to those tools."
+    },
+    {
+      "start": 1581.38,
+      "end": 1585.11,
+      "text": "I would not personally advocate for doing this, but it's"
+    },
+    {
+      "start": 1585.16,
+      "end": 1587.94,
+      "text": "also probably my job to say that I wouldn't advocate for doing this."
+    },
+    {
+      "start": 1588.5,
+      "end": 1591.7,
+      "text": "It's really, really cool. We've done a lot of these things kind of internally for"
+    },
+    {
+      "start": 1591.78,
+      "end": 1594.08,
+      "text": "our own hackathons and our own internal tooling."
+    },
+    {
+      "start": 1595.84,
+      "end": 1599.42,
+      "text": "I would just really want to make sure that there's intentionality and safety in"
+    },
+    {
+      "start": 1599.44,
+      "end": 1602.76,
+      "text": "place before we kind of offer something like that directly, if that makes sense."
+    },
+    {
+      "start": 1605.46,
+      "end": 1606.02,
+      "text": "Awesome."
+    },
+    {
+      "start": 1607,
+      "end": 1608.21,
+      "text": "I'll let you keep presenting, and we'll keep-"
+    },
+    {
+      "start": 1608.32,
+      "end": 1608.76,
+      "text": "Okay"
+    },
+    {
+      "start": 1608.78,
+      "end": 1610.4,
+      "text": "... flicking some questions at you as you go."
+    },
+    {
+      "start": 1610.52,
+      "end": 1612.4,
+      "text": "Yeah. These are amazing questions."
+    },
+    {
+      "start": 1613.039,
+      "end": 1616.52,
+      "text": "I really love the depth and intentionality in all of them, so thank you"
+    },
+    {
+      "start": 1616.56,
+      "end": 1618,
+      "text": "all. Okay."
+    },
+    {
+      "start": 1619.4,
+      "end": 1621.36,
+      "text": "I think this is everything for my slides."
+    },
+    {
+      "start": 1622.1,
+      "end": 1624.34,
+      "text": "Let's do things live. Slides are boring."
+    },
+    {
+      "start": 1625.96,
+      "end": 1628.28,
+      "text": "So I wanted to show off"
+    },
+    {
+      "start": 1629.56,
+      "end": 1633.36,
+      "text": "myself building something live, and I wanted it to"
+    },
+    {
+      "start": 1633.42,
+      "end": 1637.4,
+      "text": "be a little bit beyond, a little bit extra to a basic"
+    },
+    {
+      "start": 1637.52,
+      "end": 1641.04,
+      "text": "demo that just shows off the core primitives."
+    },
+    {
+      "start": 1641.16,
+      "end": 1644.23,
+      "text": "I could show those off as well, and I'll show you the endpoints that we're using as"
+    },
+    {
+      "start": 1644.26,
+      "end": 1646.449,
+      "text": "well. But I wanted to do something a little bit more unique."
+    },
+    {
+      "start": 1647.47,
+      "end": 1651.34,
+      "text": "And that more unique thing that I did is kind of tied to something that"
+    },
+    {
+      "start": 1651.66,
+      "end": 1653.28,
+      "text": "I personally experience in my personal life."
+    },
+    {
+      "start": 1653.9,
+      "end": 1655.82,
+      "text": "I live in New York City, and"
+    },
+    {
+      "start": 1656.72,
+      "end": 1660.58,
+      "text": "I love Citi Biking. Citi Biking are these bike ride share things that we have"
+    },
+    {
+      "start": 1660.62,
+      "end": 1662.72,
+      "text": "here. They're available in a couple of cities."
+    },
+    {
+      "start": 1663.76,
+      "end": 1666.06,
+      "text": "And I love Citi Biking so much. I do it every day."
+    },
+    {
+      "start": 1666.16,
+      "end": 1667.64,
+      "text": "I did it on the way to the office today."
+    },
+    {
+      "start": 1668.96,
+      "end": 1672.86,
+      "text": "But, a big problem that I have recently is that"
+    },
+    {
+      "start": 1672.94,
+      "end": 1676.7,
+      "text": "the bike racks around my neighborhood are always empty"
+    },
+    {
+      "start": 1677.22,
+      "end": 1680.41,
+      "text": "around the morning time when I try to commute to the office."
+    },
+    {
+      "start": 1680.74,
+      "end": 1684.54,
+      "text": "So I have to walk so many blocks away in order to"
+    },
+    {
+      "start": 1685.04,
+      "end": 1687.22,
+      "text": "find a bike that I could use to get to the office."
+    },
+    {
+      "start": 1688.12,
+      "end": 1689.14,
+      "text": "My life is so hard, I know."
+    },
+    {
+      "start": 1690.14,
+      "end": 1690.4,
+      "text": "But,"
+    },
+    {
+      "start": 1691.46,
+      "end": 1695.25,
+      "text": "that made me think immediately, okay, what's a cool data set or"
+    },
+    {
+      "start": 1695.28,
+      "end": 1698.54,
+      "text": "maybe thing that I could have Claude do for me, maybe answer some questions for me?"
+    },
+    {
+      "start": 1699.38,
+      "end": 1700,
+      "text": "And it turns out that"
+    },
+    {
+      "start": 1700.92,
+      "end": 1704.26,
+      "text": "the Citi Bike data is available publicly in"
+    },
+    {
+      "start": 1705.06,
+      "end": 1708.04,
+      "text": "CSV files and archive files. And I was like, this is really cool."
+    },
+    {
+      "start": 1708.1,
+      "end": 1708.93,
+      "text": "I could actually"
+    },
+    {
+      "start": 1709.98,
+      "end": 1713.73,
+      "text": "create an agent that answers questions for me that I'm interested about,"
+    },
+    {
+      "start": 1713.84,
+      "end": 1717.76,
+      "text": "about Citi Bikes. So really what I set"
+    },
+    {
+      "start": 1717.8,
+      "end": 1721.5,
+      "text": "up here so far is just the, let's call it the front-end"
+    },
+    {
+      "start": 1721.58,
+      "end": 1725.41,
+      "text": "template for a website that I might use for doing"
+    },
+    {
+      "start": 1725.46,
+      "end": 1729.4,
+      "text": "this. There's nothing actually wired here yet. This is entirely a front end."
+    },
+    {
+      "start": 1729.46,
+      "end": 1733.34,
+      "text": "It's not connected to any APIs. It doesn't work, as you can see here from this"
+    },
+    {
+      "start": 1733.4,
+      "end": 1733.58,
+      "text": "error."
+    },
+    {
+      "start": 1734.66,
+      "end": 1738.18,
+      "text": "I included some nice UI treatments to make building it eventually"
+    },
+    {
+      "start": 1738.66,
+      "end": 1741.38,
+      "text": "a little bit easier for myself for the demo, but there's nothing here."
+    },
+    {
+      "start": 1741.82,
+      "end": 1745.01,
+      "text": "If I try to create a session, if I try to do any of these things, if I try to say,"
+    },
+    {
+      "start": 1745.28,
+      "end": 1747.15,
+      "text": "\"Hello,\" it's just not going to work."
+    },
+    {
+      "start": 1747.84,
+      "end": 1751.66,
+      "text": "And that's on purpose because I didn't wire up any of the back-end code that"
+    },
+    {
+      "start": 1751.76,
+      "end": 1754.4,
+      "text": "actually reaches out to managed agents for me."
+    },
+    {
+      "start": 1754.92,
+      "end": 1758.54,
+      "text": "So really what we should do today is let's do that together."
+    },
+    {
+      "start": 1759.72,
+      "end": 1762.7,
+      "text": "So quickly going over kind of the structure that I have here,"
+    },
+    {
+      "start": 1763.34,
+      "end": 1767.19,
+      "text": "relatively simple code base. I did not spend a lot of time making"
+    },
+    {
+      "start": 1767.22,
+      "end": 1770.97,
+      "text": "this super robust, but there is a front end with a bunch of"
+    },
+    {
+      "start": 1770.98,
+      "end": 1773.02,
+      "text": "components to make everything look pretty."
+    },
+    {
+      "start": 1773.45,
+      "end": 1777.34,
+      "text": "And then that front end is configured to hit a bunch of back-end"
+    },
+    {
+      "start": 1777.4,
+      "end": 1779.1,
+      "text": "APIs that I developed for this website."
+    },
+    {
+      "start": 1779.96,
+      "end": 1782.38,
+      "text": "But all of these are-- They don't work."
+    },
+    {
+      "start": 1782.74,
+      "end": 1784.1,
+      "text": "None of them are configured to do anything."
+    },
+    {
+      "start": 1784.62,
+      "end": 1788.61,
+      "text": "For example, if I go to this send message function that I built, it's just"
+    },
+    {
+      "start": 1788.62,
+      "end": 1792.39,
+      "text": "going to immediately give me an error that this thing wasn't"
+    },
+    {
+      "start": 1792.4,
+      "end": 1792.88,
+      "text": "implemented."
+    },
+    {
+      "start": 1793.82,
+      "end": 1795.94,
+      "text": "And that's on purpose, right? I want to show us doing this live."
+    },
+    {
+      "start": 1797.96,
+      "end": 1801.7,
+      "text": "And I built all the stubs for all of these things, but they just don't work"
+    },
+    {
+      "start": 1801.74,
+      "end": 1801.96,
+      "text": "yet."
+    },
+    {
+      "start": 1803.32,
+      "end": 1806.75,
+      "text": "And let's together go through the process of actually building"
+    },
+    {
+      "start": 1806.76,
+      "end": 1810.74,
+      "text": "this. And unfortunately, it's 2026, and no one writes code by"
+    },
+    {
+      "start": 1810.78,
+      "end": 1814.62,
+      "text": "hand anymore. So I figured I would not do the same for this demo."
+    },
+    {
+      "start": 1814.66,
+      "end": 1817.48,
+      "text": "So I actually have Claude Code here open on the side."
+    },
+    {
+      "start": 1818.32,
+      "end": 1821.06,
+      "text": "On this terminal shell, I just have the Bun server running."
+    },
+    {
+      "start": 1821.12,
+      "end": 1824.02,
+      "text": "There's nothing actually fancy happening here."
+    },
+    {
+      "start": 1824.62,
+      "end": 1828.1,
+      "text": "And a cool thing that I want us to do is"
+    },
+    {
+      "start": 1828.86,
+      "end": 1832.78,
+      "text": "use a skill that we actually released into Claude Code and"
+    },
+    {
+      "start": 1832.82,
+      "end": 1835.36,
+      "text": "is available publicly on our skills repository."
+    },
+    {
+      "start": 1835.9,
+      "end": 1839.64,
+      "text": "And that skill actually teaches Claude how to use the Claude Managed Agents"
+    },
+    {
+      "start": 1839.68,
+      "end": 1843.37,
+      "text": "API, which is a really funny, full circle moment that we're teaching Claude"
+    },
+    {
+      "start": 1843.44,
+      "end": 1847.212,
+      "text": "Code how to use an APIIn order to build things with"
+    },
+    {
+      "start": 1847.252,
+      "end": 1848.512,
+      "text": "Claude, it's very"
+    },
+    {
+      "start": 1849.352,
+      "end": 1851.172,
+      "text": "meta, but this works really, really well."
+    },
+    {
+      "start": 1851.252,
+      "end": 1855.172,
+      "text": "So really what I want it to do now is I am"
+    },
+    {
+      "start": 1855.182,
+      "end": 1856.532,
+      "text": "going to tell it to use,"
+    },
+    {
+      "start": 1857.492,
+      "end": 1859.632,
+      "text": "or actually I should say Claude API,"
+    },
+    {
+      "start": 1861.012,
+      "end": 1861.372,
+      "text": "use"
+    },
+    {
+      "start": 1862.332,
+      "end": 1866.192,
+      "text": "Claude-managed agents APIs in"
+    },
+    {
+      "start": 1866.332,
+      "end": 1868.592,
+      "text": "order to implement the"
+    },
+    {
+      "start": 1869.432,
+      "end": 1873.052,
+      "text": "spec.md for this web app."
+    },
+    {
+      "start": 1874.352,
+      "end": 1878.312,
+      "text": "And quickly going over what I mean when I say the spec.md, I wrote ahead of"
+    },
+    {
+      "start": 1878.372,
+      "end": 1881.672,
+      "text": "time a bunch of instructions on what I want this website to function as,"
+    },
+    {
+      "start": 1882.452,
+      "end": 1885.672,
+      "text": "how I would like the website or the app that I build to react."
+    },
+    {
+      "start": 1887.032,
+      "end": 1890.172,
+      "text": "And it's really just a bunch of instructions for Claude on which endpoints I would"
+    },
+    {
+      "start": 1890.192,
+      "end": 1893.742,
+      "text": "like it to connect to, right? I want to have a sidebar, and in that"
+    },
+    {
+      "start": 1893.772,
+      "end": 1897.512,
+      "text": "sidebar, I want to be able to list all of the past sessions and all the past chats"
+    },
+    {
+      "start": 1897.532,
+      "end": 1898.852,
+      "text": "that I had with Claude."
+    },
+    {
+      "start": 1900.112,
+      "end": 1904.092,
+      "text": "I want to be able to create a new session whenever I submit a brand-new"
+    },
+    {
+      "start": 1904.132,
+      "end": 1904.552,
+      "text": "message."
+    },
+    {
+      "start": 1905.452,
+      "end": 1909.252,
+      "text": "I want to be able to connect to a previous session if I click the"
+    },
+    {
+      "start": 1909.272,
+      "end": 1912.632,
+      "text": "URL for it on the sidebar. And I want to be able to"
+    },
+    {
+      "start": 1912.672,
+      "end": 1916.312,
+      "text": "submit messages in order for Claude to react to them."
+    },
+    {
+      "start": 1917.192,
+      "end": 1920.072,
+      "text": "So I use the send message function that I stubbed out."
+    },
+    {
+      "start": 1921.152,
+      "end": 1921.872,
+      "text": "And then I want to"
+    },
+    {
+      "start": 1923.792,
+      "end": 1925.652,
+      "text": "give Claude access to those"
+    },
+    {
+      "start": 1927.112,
+      "end": 1930.862,
+      "text": "Citibike data files. There's a bunch of CSV files that I downloaded ahead of"
+    },
+    {
+      "start": 1930.912,
+      "end": 1932.822,
+      "text": "time. And"
+    },
+    {
+      "start": 1934.592,
+      "end": 1935.452,
+      "text": "Claude, in addition to"
+    },
+    {
+      "start": 1936.332,
+      "end": 1940.112,
+      "text": "taking files that I upload to its container, can also generate new files."
+    },
+    {
+      "start": 1940.152,
+      "end": 1943.132,
+      "text": "And I can then download those files from those containers in order to get the"
+    },
+    {
+      "start": 1943.172,
+      "end": 1944.972,
+      "text": "artifacts of the work that Claude did."
+    },
+    {
+      "start": 1946.032,
+      "end": 1949.452,
+      "text": "And I'll show you in a bit, but one of the things that I would like it to do is,"
+    },
+    {
+      "start": 1950.052,
+      "end": 1952.672,
+      "text": "whenever there's a new file kind of generated for that session, I want it to"
+    },
+    {
+      "start": 1952.692,
+      "end": 1956.532,
+      "text": "download it and render it in my web app so that I can see whatever charts"
+    },
+    {
+      "start": 1956.812,
+      "end": 1959.172,
+      "text": "or visual Claude built for me."
+    },
+    {
+      "start": 1960.792,
+      "end": 1964.552,
+      "text": "So the rest of the spec is kind of just a little bit of instruction around what I"
+    },
+    {
+      "start": 1964.592,
+      "end": 1968.412,
+      "text": "want it to do. I want to make sure I have the Anthropic SDK"
+    },
+    {
+      "start": 1968.452,
+      "end": 1972.372,
+      "text": "installed. This is just the plain Anthropic Claude SDK that we have"
+    },
+    {
+      "start": 1972.412,
+      "end": 1976.192,
+      "text": "today. I want it to know that, hey, I"
+    },
+    {
+      "start": 1976.531,
+      "end": 1980.352,
+      "text": "want to upload the Citibike zip file that I downloaded ahead of time,"
+    },
+    {
+      "start": 1981.312,
+      "end": 1983.432,
+      "text": "and I want it to configure the environment itself."
+    },
+    {
+      "start": 1984.332,
+      "end": 1987.172,
+      "text": "And then there's a couple of instructions around making sure that Claude doesn't"
+    },
+    {
+      "start": 1987.592,
+      "end": 1990.912,
+      "text": "perpetually create new agents for every single time I create a session, or the same"
+    },
+    {
+      "start": 1990.932,
+      "end": 1994.872,
+      "text": "thing with environments, just to make sure that I'm using my resources a"
+    },
+    {
+      "start": 1994.912,
+      "end": 1995.772,
+      "text": "little bit more"
+    },
+    {
+      "start": 1996.632,
+      "end": 2000.212,
+      "text": "frugally. And then a little bit of a"
+    },
+    {
+      "start": 2000.272,
+      "end": 2003.312,
+      "text": "quick agent configuration information for it."
+    },
+    {
+      "start": 2003.332,
+      "end": 2006.692,
+      "text": "Claude decided that YAML was the best kind of format for it."
+    },
+    {
+      "start": 2006.932,
+      "end": 2008.101,
+      "text": "There's nothing fancy about this YAML."
+    },
+    {
+      "start": 2008.252,
+      "end": 2012.192,
+      "text": "I think it just reads all the specific fields and then maps them"
+    },
+    {
+      "start": 2012.272,
+      "end": 2016.132,
+      "text": "to API calls. But in this YAML for the agent itself, I'm just"
+    },
+    {
+      "start": 2016.192,
+      "end": 2019.512,
+      "text": "defining the model I want to use. I gave it a name, system prompt."
+    },
+    {
+      "start": 2020.812,
+      "end": 2022.172,
+      "text": "I gave it a list of tools."
+    },
+    {
+      "start": 2023.232,
+      "end": 2027.212,
+      "text": "And really the two major entries in this tools list are the agent tool sets,"
+    },
+    {
+      "start": 2028.072,
+      "end": 2031.932,
+      "text": "which includes all of the native sandbox tools that I listed"
+    },
+    {
+      "start": 2031.972,
+      "end": 2034.592,
+      "text": "earlier, like Bash, File Read, File Write, et cetera."
+    },
+    {
+      "start": 2035.992,
+      "end": 2037.202,
+      "text": "And then one custom tool,"
+    },
+    {
+      "start": 2038.012,
+      "end": 2041.452,
+      "text": "because I want to render a cool map inside the actual"
+    },
+    {
+      "start": 2042.392,
+      "end": 2043.012,
+      "text": "demo itself."
+    },
+    {
+      "start": 2043.992,
+      "end": 2047.942,
+      "text": "Maybe while I'm continuing to talk about this, I'm going to kick off this thing"
+    },
+    {
+      "start": 2048.292,
+      "end": 2051.053,
+      "text": "so that Claude can actually start building the app for us."
+    },
+    {
+      "start": 2051.572,
+      "end": 2054.203,
+      "text": "And it's just going to go run in the background and do all the things that I need"
+    },
+    {
+      "start": 2054.212,
+      "end": 2057.662,
+      "text": "to do now. I think I have it set to auto mode, so there's not really a lot of"
+    },
+    {
+      "start": 2057.672,
+      "end": 2058.252,
+      "text": "problems with it."
+    },
+    {
+      "start": 2059.852,
+      "end": 2063.601,
+      "text": "But getting back to the spec, again, same thing as with the agent config, I want it"
+    },
+    {
+      "start": 2063.632,
+      "end": 2066.632,
+      "text": "to do the same thing with the environment config to make sure it configures the"
+    },
+    {
+      "start": 2066.652,
+      "end": 2068.332,
+      "text": "environment with the right network rules."
+    },
+    {
+      "start": 2069.272,
+      "end": 2072.122,
+      "text": "I know it has to do some data analysis, so I want to make sure that it installs"
+    },
+    {
+      "start": 2073.013,
+      "end": 2075.493,
+      "text": "the right Python libraries in order to do that."
+    },
+    {
+      "start": 2076.072,
+      "end": 2079.953,
+      "text": "And then I want to make sure that if I have the"
+    },
+    {
+      "start": 2080.013,
+      "end": 2082.352,
+      "text": "zip file uploaded, Claude knows how to"
+    },
+    {
+      "start": 2083.332,
+      "end": 2085.812,
+      "text": "uninstall them or unzip it."
+    },
+    {
+      "start": 2087.372,
+      "end": 2090.953,
+      "text": "And then there's a little bit of a description that I guess I wrote in for Claude"
+    },
+    {
+      "start": 2090.973,
+      "end": 2094.553,
+      "text": "to be able to know what to do with individual events as it builds things."
+    },
+    {
+      "start": 2095.852,
+      "end": 2097.792,
+      "text": "And the rest of this is really just"
+    },
+    {
+      "start": 2098.832,
+      "end": 2102.612,
+      "text": "a heads-up for Claude on what I want this app to behave like, right?"
+    },
+    {
+      "start": 2102.932,
+      "end": 2105.272,
+      "text": "Your app might be different, so you might want to write a different spec."
+    },
+    {
+      "start": 2106.452,
+      "end": 2110.092,
+      "text": "I found that writing these kind of longer specs and validating them with Claude"
+    },
+    {
+      "start": 2110.132,
+      "end": 2114.072,
+      "text": "before implementing things is usually a little bit"
+    },
+    {
+      "start": 2114.592,
+      "end": 2114.812,
+      "text": "better."
+    },
+    {
+      "start": 2115.692,
+      "end": 2119.232,
+      "text": "And it makes Claude just a lot better at responding to these things."
+    },
+    {
+      "start": 2120.732,
+      "end": 2124.012,
+      "text": "And just a little bit of a definition of, again, all the API endpoints that I will"
+    },
+    {
+      "start": 2124.052,
+      "end": 2126.912,
+      "text": "need in order to make this thing really, really, really work."
+    },
+    {
+      "start": 2127.832,
+      "end": 2129.912,
+      "text": "And then a couple of things that I feel are out of scope."
+    },
+    {
+      "start": 2130.752,
+      "end": 2133.852,
+      "text": "I'm just building a demo right now. I don't need authentication into this website."
+    },
+    {
+      "start": 2134.052,
+      "end": 2136.092,
+      "text": "I could just open it. I'm not deploying this anywhere."
+    },
+    {
+      "start": 2136.752,
+      "end": 2140.012,
+      "text": "And verification steps for it to be able to"
+    },
+    {
+      "start": 2140.022,
+      "end": 2141.732,
+      "text": "actually double-check its work."
+    },
+    {
+      "start": 2142.852,
+      "end": 2146.252,
+      "text": "And that's really it. Everything else, Claude will probably be"
+    },
+    {
+      "start": 2146.312,
+      "end": 2148.752,
+      "text": "live implementing now and figuring it out."
+    },
+    {
+      "start": 2149.232,
+      "end": 2153.152,
+      "text": "It looks like it took some time to actually explore the"
+    },
+    {
+      "start": 2153.172,
+      "end": 2157.052,
+      "text": "code base a little bit. But while Claude is actually building this thing for us, it"
+    },
+    {
+      "start": 2157.072,
+      "end": 2159.352,
+      "text": "might take a little bit of time, which is totally fine."
+    },
+    {
+      "start": 2160.152,
+      "end": 2163.292,
+      "text": "I figured I'd go over to our developer platform in order to"
+    },
+    {
+      "start": 2163.332,
+      "end": 2166.612,
+      "text": "showcase what you as a developer might want to do in order"
+    },
+    {
+      "start": 2166.712,
+      "end": 2167.552,
+      "text": "to"
+    },
+    {
+      "start": 2168.772,
+      "end": 2172.732,
+      "text": "actually debug and build these things using kind of the UI itself"
+    },
+    {
+      "start": 2172.752,
+      "end": 2175.872,
+      "text": "directly in order to make maybe your life easier and get a sense for how things"
+    },
+    {
+      "start": 2175.912,
+      "end": 2179.792,
+      "text": "work. In the developer console, we have this new tab called Managed Agents"
+    },
+    {
+      "start": 2179.852,
+      "end": 2180.612,
+      "text": "or this new section."
+    },
+    {
+      "start": 2181.592,
+      "end": 2185.152,
+      "text": "There's a little bit of a quick start if you want to use Claude to build"
+    },
+    {
+      "start": 2185.172,
+      "end": 2189.152,
+      "text": "agents for you. This will just kind of help you kind of get a sense"
+    },
+    {
+      "start": 2189.192,
+      "end": 2192.912,
+      "text": "and a feel for how to do things. I actually don't want to do that for"
+    },
+    {
+      "start": 2193.072,
+      "end": 2194.092,
+      "text": "this demo because I want to"
+    },
+    {
+      "start": 2194.912,
+      "end": 2198.092,
+      "text": "show you manually how a lot of these things work so that you get a little bit of a"
+    },
+    {
+      "start": 2198.132,
+      "end": 2199.392,
+      "text": "deeper understanding."
+    },
+    {
+      "start": 2200.632,
+      "end": 2204.472,
+      "text": "This is one of the demo agents that I built when I was doing a dry"
+    },
+    {
+      "start": 2204.512,
+      "end": 2208.432,
+      "text": "run of this demo earlier. And it maps one-to-one with the"
+    },
+    {
+      "start": 2208.452,
+      "end": 2209.652,
+      "text": "things that I showed off earlier, right?"
+    },
+    {
+      "start": 2209.752,
+      "end": 2212.052,
+      "text": "These are all the built-in tools that I added."
+    },
+    {
+      "start": 2212.892,
+      "end": 2214.752,
+      "text": "Here's this custom tool for render map."
+    },
+    {
+      "start": 2215.892,
+      "end": 2218.492,
+      "text": "And here's the system prompt for this agent."
+    },
+    {
+      "start": 2219.232,
+      "end": 2223.112,
+      "text": "I could have also configured some skills that this agent always has access"
+    },
+    {
+      "start": 2223.172,
+      "end": 2226.472,
+      "text": "to. I decided for this demo to not include that, but that is"
+    },
+    {
+      "start": 2226.512,
+      "end": 2230.448,
+      "text": "availableAs well. And maybe I can answer some questions about that later"
+    },
+    {
+      "start": 2230.468,
+      "end": 2234.408,
+      "text": "if folks are interested. This is a previous"
+    },
+    {
+      "start": 2234.508,
+      "end": 2238.428,
+      "text": "kind of iteration of this thing, but I could go and modify this if I needed to"
+    },
+    {
+      "start": 2238.488,
+      "end": 2239.728,
+      "text": "in order to make future"
+    },
+    {
+      "start": 2240.628,
+      "end": 2244.448,
+      "text": "sessions that I start with this agent behave slightly differently."
+    },
+    {
+      "start": 2245.148,
+      "end": 2248.968,
+      "text": "One of the other things that I also specified when I did this first demo is"
+    },
+    {
+      "start": 2249.248,
+      "end": 2249.848,
+      "text": "to make sure that"
+    },
+    {
+      "start": 2251.008,
+      "end": 2254.348,
+      "text": "the agent tool set, the Bash file read tools that I"
+    },
+    {
+      "start": 2254.668,
+      "end": 2255.168,
+      "text": "specified,"
+    },
+    {
+      "start": 2256.208,
+      "end": 2259.998,
+      "text": "are always allowed. So they always auto-execute on my behalf because I just don't"
+    },
+    {
+      "start": 2260.008,
+      "end": 2263.958,
+      "text": "want to take care of dealing with clicking Approve as a user every"
+    },
+    {
+      "start": 2264.028,
+      "end": 2266.808,
+      "text": "single time Claude wants to do something. I just want this information."
+    },
+    {
+      "start": 2266.838,
+      "end": 2270.018,
+      "text": "And I don't think that there's anything particularly sensitive in the files that"
+    },
+    {
+      "start": 2270.048,
+      "end": 2272.948,
+      "text": "I'm giving it. It's just access to a publicly accessible"
+    },
+    {
+      "start": 2274.308,
+      "end": 2278.008,
+      "text": "data set. So I'm not that worried about it just running wild in the"
+    },
+    {
+      "start": 2278.048,
+      "end": 2280.548,
+      "text": "container because there's really not a lot of dangerous things that it could do for"
+    },
+    {
+      "start": 2280.588,
+      "end": 2280.788,
+      "text": "me."
+    },
+    {
+      "start": 2281.588,
+      "end": 2284.908,
+      "text": "And then, if I were to modify any of these things,"
+    },
+    {
+      "start": 2285.688,
+      "end": 2288.868,
+      "text": "a really, really nice aspect of how we build agents is that they're versions."
+    },
+    {
+      "start": 2289.368,
+      "end": 2292.908,
+      "text": "So if I were to say, instead of this system prompt, I were to say,"
+    },
+    {
+      "start": 2293.788,
+      "end": 2294.688,
+      "text": "I don't know, \"Talk"
+    },
+    {
+      "start": 2295.848,
+      "end": 2297.238,
+      "text": "like a pirate,\""
+    },
+    {
+      "start": 2298.928,
+      "end": 2299.618,
+      "text": "and I save this,"
+    },
+    {
+      "start": 2301.108,
+      "end": 2305.028,
+      "text": "I now have a V2 of the same agent, and I could"
+    },
+    {
+      "start": 2305.068,
+      "end": 2309.028,
+      "text": "decide to create sessions with the V1 version of this agent or"
+    },
+    {
+      "start": 2309.068,
+      "end": 2310.848,
+      "text": "the latest version, the V2 of this agent."
+    },
+    {
+      "start": 2311.848,
+      "end": 2314.088,
+      "text": "And if I were to start a session with this V2"
+    },
+    {
+      "start": 2314.948,
+      "end": 2318.848,
+      "text": "version of it, it would most likely start talking like a pirate versus the V1"
+    },
+    {
+      "start": 2318.868,
+      "end": 2322.608,
+      "text": "version of it. It's just a cool little kind of versioning strategy that we wanted"
+    },
+    {
+      "start": 2322.668,
+      "end": 2324.968,
+      "text": "to offer customers to be able to use."
+    },
+    {
+      "start": 2326.168,
+      "end": 2329.268,
+      "text": "And then I can go and see all of the sessions that this agent"
+    },
+    {
+      "start": 2330.028,
+      "end": 2332.608,
+      "text": "has done. There's really only three here."
+    },
+    {
+      "start": 2332.728,
+      "end": 2336.688,
+      "text": "They're previous runs of me doing this. These are individual chats."
+    },
+    {
+      "start": 2336.968,
+      "end": 2340.848,
+      "text": "And this might be your monitoring view in order to make sure that your"
+    },
+    {
+      "start": 2340.868,
+      "end": 2342.758,
+      "text": "customers are not running into problems,"
+    },
+    {
+      "start": 2343.688,
+      "end": 2345.198,
+      "text": "and that sessions are working correctly,"
+    },
+    {
+      "start": 2346.028,
+      "end": 2348.288,
+      "text": "and just get more information about these sessions."
+    },
+    {
+      "start": 2348.678,
+      "end": 2352.208,
+      "text": "So I could actually click into one of these sessions, and I could see"
+    },
+    {
+      "start": 2352.648,
+      "end": 2356.258,
+      "text": "the history of events or the transcript of"
+    },
+    {
+      "start": 2356.948,
+      "end": 2360.708,
+      "text": "the session. It started out by the end user submitting some sort of message,"
+    },
+    {
+      "start": 2361.468,
+      "end": 2365.248,
+      "text": "and then Claude decided to use Bash a bunch in order to look at"
+    },
+    {
+      "start": 2365.308,
+      "end": 2369.248,
+      "text": "the zip file and process it and maybe"
+    },
+    {
+      "start": 2369.268,
+      "end": 2371.768,
+      "text": "run some analytics on it, and anything along those lines."
+    },
+    {
+      "start": 2371.788,
+      "end": 2375.557,
+      "text": "And then it used this render map tool, which I'll show off in a little bit, and"
+    },
+    {
+      "start": 2375.588,
+      "end": 2379.408,
+      "text": "then responded with, \"Okay, here's some data about the question that you"
+    },
+    {
+      "start": 2379.448,
+      "end": 2379.688,
+      "text": "asked.\""
+    },
+    {
+      "start": 2381.028,
+      "end": 2384.828,
+      "text": "And then the user asked a follow-up question to continue the"
+    },
+    {
+      "start": 2384.868,
+      "end": 2388.668,
+      "text": "session. You can see here how long each one of these steps"
+    },
+    {
+      "start": 2388.688,
+      "end": 2391.348,
+      "text": "took. We also have some more information about that here."
+    },
+    {
+      "start": 2391.408,
+      "end": 2392.308,
+      "text": "And so just some more"
+    },
+    {
+      "start": 2393.208,
+      "end": 2397.048,
+      "text": "overall data around the session itself in order for you to really make sure"
+    },
+    {
+      "start": 2397.108,
+      "end": 2400.448,
+      "text": "that your managed agents are configured the way that you would like them to be."
+    },
+    {
+      "start": 2402.228,
+      "end": 2406.168,
+      "text": "A nice, cool thing of this is that we also give you this Ask Claude"
+    },
+    {
+      "start": 2406.208,
+      "end": 2406.448,
+      "text": "button,"
+    },
+    {
+      "start": 2407.428,
+      "end": 2411.288,
+      "text": "where if things are going wrong, this is kind of like a side"
+    },
+    {
+      "start": 2411.328,
+      "end": 2415.098,
+      "text": "session that you can go and it will be aware"
+    },
+    {
+      "start": 2415.168,
+      "end": 2417.108,
+      "text": "of this particular session that was going on."
+    },
+    {
+      "start": 2417.588,
+      "end": 2420.628,
+      "text": "And you can ask it questions about, why did something go wrong?"
+    },
+    {
+      "start": 2420.808,
+      "end": 2424.788,
+      "text": "Why did a tool not do as well? Maybe analyze the performance."
+    },
+    {
+      "start": 2424.828,
+      "end": 2427.968,
+      "text": "Maybe the system prompt that we gave Claude is really not optimal."
+    },
+    {
+      "start": 2428.028,
+      "end": 2431.638,
+      "text": "Maybe we're asking it to do more than it needs to be doing, and that's making our"
+    },
+    {
+      "start": 2431.648,
+      "end": 2435.028,
+      "text": "sessions slower or making them not behave the way that we want."
+    },
+    {
+      "start": 2435.388,
+      "end": 2439.228,
+      "text": "So you can ask Claude to analyze the performance, and figure out"
+    },
+    {
+      "start": 2439.248,
+      "end": 2442.848,
+      "text": "any weird latency issues for the session."
+    },
+    {
+      "start": 2443.848,
+      "end": 2447.608,
+      "text": "So you can see here, Claude is actually live understanding"
+    },
+    {
+      "start": 2448.088,
+      "end": 2451.808,
+      "text": "what made this session particularly slow or particularly fast,"
+    },
+    {
+      "start": 2452.548,
+      "end": 2453.328,
+      "text": "which is really, really cool."
+    },
+    {
+      "start": 2454.988,
+      "end": 2457.968,
+      "text": "Let's check in on how our buddy is doing. Okay."
+    },
+    {
+      "start": 2458.128,
+      "end": 2460.988,
+      "text": "It seemed like Claude says that the build is done."
+    },
+    {
+      "start": 2461.608,
+      "end": 2465.498,
+      "text": "I hope it's right because we're doing a live session right now, and I really,"
+    },
+    {
+      "start": 2465.548,
+      "end": 2469.268,
+      "text": "really hope that things work. Okay, so going back to our"
+    },
+    {
+      "start": 2469.308,
+      "end": 2469.748,
+      "text": "webpage."
+    },
+    {
+      "start": 2470.968,
+      "end": 2474.868,
+      "text": "Okay. See, now that I refreshed it, it seems like it was able to pick"
+    },
+    {
+      "start": 2474.928,
+      "end": 2478.888,
+      "text": "up those previous sessions, which is a positive signal."
+    },
+    {
+      "start": 2479.088,
+      "end": 2480.788,
+      "text": "Seems like there's something good happening here."
+    },
+    {
+      "start": 2480.848,
+      "end": 2484.208,
+      "text": "At least the API for listing all the sessions is configured."
+    },
+    {
+      "start": 2484.747,
+      "end": 2486.528,
+      "text": "Let's actually try sending it a request."
+    },
+    {
+      "start": 2486.708,
+      "end": 2490.388,
+      "text": "I could click one of these kind of quick start suggestion pills I gave"
+    },
+    {
+      "start": 2490.428,
+      "end": 2490.828,
+      "text": "myself."
+    },
+    {
+      "start": 2491.768,
+      "end": 2492.468,
+      "text": "So let's say,"
+    },
+    {
+      "start": 2494.428,
+      "end": 2496.988,
+      "text": "the busiest start stations for the month."
+    },
+    {
+      "start": 2498.448,
+      "end": 2502.268,
+      "text": "It created a session, and now it's sending that event."
+    },
+    {
+      "start": 2503.168,
+      "end": 2504.398,
+      "text": "In the UI that I built, I"
+    },
+    {
+      "start": 2505.888,
+      "end": 2509.808,
+      "text": "made this intentionally very techie and verbose, so to speak."
+    },
+    {
+      "start": 2510.568,
+      "end": 2513.548,
+      "text": "You would probably build your UI to look a little bit differently."
+    },
+    {
+      "start": 2513.588,
+      "end": 2517.568,
+      "text": "Maybe when you see an agent.thinking event, you might want to render some rich"
+    },
+    {
+      "start": 2519.008,
+      "end": 2522.678,
+      "text": "UI components that render that. I just wanted to show you as many events as"
+    },
+    {
+      "start": 2522.688,
+      "end": 2526.678,
+      "text": "possible and as directly as possible so that you have"
+    },
+    {
+      "start": 2526.728,
+      "end": 2528.608,
+      "text": "a little bit more of a sense of how these things work."
+    },
+    {
+      "start": 2529.708,
+      "end": 2532.948,
+      "text": "So the very first thing that happened when we submitted the session, we changed the"
+    },
+    {
+      "start": 2533.008,
+      "end": 2536.908,
+      "text": "status of it to Running. And then the model"
+    },
+    {
+      "start": 2536.968,
+      "end": 2538.968,
+      "text": "started. It got a message,"
+    },
+    {
+      "start": 2539.788,
+      "end": 2543.528,
+      "text": "and it started doing its work. It's executing some tools."
+    },
+    {
+      "start": 2544.028,
+      "end": 2545.408,
+      "text": "It seems like it's using Bash."
+    },
+    {
+      "start": 2546.328,
+      "end": 2549.448,
+      "text": "Very similar to the previous iteration that I showed you."
+    },
+    {
+      "start": 2551.508,
+      "end": 2553.028,
+      "text": "And this will kind of keep running for a while."
+    },
+    {
+      "start": 2553.828,
+      "end": 2557.788,
+      "text": "I hope whatever question I asked it is not that complex so that it can kind of"
+    },
+    {
+      "start": 2557.868,
+      "end": 2560.768,
+      "text": "answer things a little bit more quickly, but who knows?"
+    },
+    {
+      "start": 2561.528,
+      "end": 2565.208,
+      "text": "See, it seems like it's running Pandas right now and some"
+    },
+    {
+      "start": 2565.268,
+      "end": 2566.128,
+      "text": "Matplotlib."
+    },
+    {
+      "start": 2567.028,
+      "end": 2570.498,
+      "text": "And then finally, it decided, \"Hey, this user's asking me a question about"
+    },
+    {
+      "start": 2570.528,
+      "end": 2574.288,
+      "text": "locationality.\" So it's actually rendering this in the"
+    },
+    {
+      "start": 2574.328,
+      "end": 2576.628,
+      "text": "map using that custom render tool that I gave it."
+    },
+    {
+      "start": 2577.408,
+      "end": 2581.298,
+      "text": "And really, the custom render tool is literally just Claude telling"
+    },
+    {
+      "start": 2581.648,
+      "end": 2582.628,
+      "text": "our web app, \"Hey,"
+    },
+    {
+      "start": 2584.108,
+      "end": 2587.488,
+      "text": "here's some UI that you might want to display.\" Although you can set those tools to"
+    },
+    {
+      "start": 2587.508,
+      "end": 2590.092,
+      "text": "be whatever you want them to be.So this is really interesting."
+    },
+    {
+      "start": 2590.252,
+      "end": 2594.132,
+      "text": "Okay, it seems like there's some busy stations all around kind of Lower Manhattan"
+    },
+    {
+      "start": 2594.152,
+      "end": 2594.572,
+      "text": "in New York."
+    },
+    {
+      "start": 2596.172,
+      "end": 2598.942,
+      "text": "I live in Green Point, though, and I'm really more curious about Green Point."
+    },
+    {
+      "start": 2599.592,
+      "end": 2603.092,
+      "text": "So can you specifically look"
+    },
+    {
+      "start": 2603.172,
+      "end": 2604.632,
+      "text": "into Green Point"
+    },
+    {
+      "start": 2605.512,
+      "end": 2606.392,
+      "text": "in Brooklyn?"
+    },
+    {
+      "start": 2607.632,
+      "end": 2609.372,
+      "text": "That's where I live."
+    },
+    {
+      "start": 2611.672,
+      "end": 2615.512,
+      "text": "Okay. I guess I didn't scroll down, but it also generated a nice plot"
+    },
+    {
+      "start": 2615.572,
+      "end": 2616.592,
+      "text": "for me about,"
+    },
+    {
+      "start": 2617.752,
+      "end": 2619.272,
+      "text": "I guess, how popular these locations are."
+    },
+    {
+      "start": 2620.582,
+      "end": 2623.752,
+      "text": "And now it's running, it's responding to that."
+    },
+    {
+      "start": 2623.792,
+      "end": 2626.692,
+      "text": "This is essentially a follow-up message to my initial message."
+    },
+    {
+      "start": 2627.412,
+      "end": 2629.192,
+      "text": "So you can have a really long-running chat here."
+    },
+    {
+      "start": 2630.032,
+      "end": 2633.652,
+      "text": "Some of my peers have had them run for days at a time with no problems."
+    },
+    {
+      "start": 2634.512,
+      "end": 2637.892,
+      "text": "We'll kind of take care of all the nitty-gritty of retrying and context management"
+    },
+    {
+      "start": 2637.912,
+      "end": 2641.652,
+      "text": "and all that stuff. And you can get some really interesting behaviors when"
+    },
+    {
+      "start": 2642.012,
+      "end": 2645.732,
+      "text": "you really get these sessions that are running for a very long time, and Claude"
+    },
+    {
+      "start": 2645.812,
+      "end": 2649.752,
+      "text": "really hones in on a lot of the specifics of what you want"
+    },
+    {
+      "start": 2649.772,
+      "end": 2650.792,
+      "text": "it to do."
+    },
+    {
+      "start": 2651.832,
+      "end": 2653.752,
+      "text": "Michael, I wonder if we get to some questions."
+    },
+    {
+      "start": 2653.791,
+      "end": 2655.612,
+      "text": "We have a whole bunch of questions that folks have asked."
+    },
+    {
+      "start": 2655.632,
+      "end": 2656.772,
+      "text": "Please. Yeah, please."
+    },
+    {
+      "start": 2656.932,
+      "end": 2660.492,
+      "text": "I heard Ernie's question from earlier, which was: What was the longest running task"
+    },
+    {
+      "start": 2660.572,
+      "end": 2662.232,
+      "text": "Claude managed agents have handled so far?"
+    },
+    {
+      "start": 2663.032,
+      "end": 2665.112,
+      "text": "Ooh, that's a really good question."
+    },
+    {
+      "start": 2667.232,
+      "end": 2670.092,
+      "text": "I don't know the number of days, but it is on the order of days"
+    },
+    {
+      "start": 2671.572,
+      "end": 2674.272,
+      "text": "of it being able to iterate on something."
+    },
+    {
+      "start": 2674.412,
+      "end": 2678.172,
+      "text": "I don't have a hard number for you. I know it was more than two, but less"
+    },
+    {
+      "start": 2678.252,
+      "end": 2678.872,
+      "text": "than 10."
+    },
+    {
+      "start": 2680.572,
+      "end": 2681.532,
+      "text": "I should probably find that out."
+    },
+    {
+      "start": 2683.072,
+      "end": 2683.412,
+      "text": "Fair enough."
+    },
+    {
+      "start": 2685.232,
+      "end": 2688.212,
+      "text": "Some questions about how to access Claude managed agents."
+    },
+    {
+      "start": 2688.292,
+      "end": 2689.652,
+      "text": "So Daniel is asking,"
+    },
+    {
+      "start": 2690.692,
+      "end": 2692.592,
+      "text": "\"Can we use them outside of the Claude console?\""
+    },
+    {
+      "start": 2693.172,
+      "end": 2693.272,
+      "text": "Yes."
+    },
+    {
+      "start": 2693.282,
+      "end": 2697.012,
+      "text": "And then Drumil Barot was asking, \"Is Claude managed agents only usable through the"
+    },
+    {
+      "start": 2697.072,
+      "end": 2699.462,
+      "text": "API, or is it also possible through OAuth as"
+    },
+    {
+      "start": 2699.492,
+      "end": 2701.112,
+      "text": "well?\""
+    },
+    {
+      "start": 2701.232,
+      "end": 2704.952,
+      "text": "I'll answer the first one quickly, because that one is a little bit more"
+    },
+    {
+      "start": 2705.012,
+      "end": 2707.912,
+      "text": "straightforward. Yeah, you don't have to use the developer UI, right?"
+    },
+    {
+      "start": 2707.992,
+      "end": 2711.392,
+      "text": "So the code that I built here has nothing to do with our developer UI."
+    },
+    {
+      "start": 2711.512,
+      "end": 2714.912,
+      "text": "We're making direct API calls using the Anthropic"
+    },
+    {
+      "start": 2715.412,
+      "end": 2716.732,
+      "text": "SDK. So"
+    },
+    {
+      "start": 2717.592,
+      "end": 2721.052,
+      "text": "here, for example, we're literally writing code that hits our API."
+    },
+    {
+      "start": 2721.152,
+      "end": 2723.192,
+      "text": "Our SDKs make it really easy to interact with it."
+    },
+    {
+      "start": 2723.992,
+      "end": 2727.552,
+      "text": "But this is what it looks like to build code and build your own"
+    },
+    {
+      "start": 2727.652,
+      "end": 2730.992,
+      "text": "applications. You can never touch the developer console if you don't want to."
+    },
+    {
+      "start": 2732.172,
+      "end": 2736.152,
+      "text": "Our developer docs actually have a new kind of managed agent section here that you"
+    },
+    {
+      "start": 2736.192,
+      "end": 2739.872,
+      "text": "can go to, including a ton of really rich information going over"
+    },
+    {
+      "start": 2740.052,
+      "end": 2742.192,
+      "text": "way more than I actually went over just now."
+    },
+    {
+      "start": 2743.192,
+      "end": 2746.952,
+      "text": "And if you are really curious about what APIs and how those APIs"
+    },
+    {
+      "start": 2746.992,
+      "end": 2750.832,
+      "text": "work and all of that stuff, our API reference here includes a whole section for"
+    },
+    {
+      "start": 2750.872,
+      "end": 2751.512,
+      "text": "managed agents"
+    },
+    {
+      "start": 2752.572,
+      "end": 2754.412,
+      "text": "that goes over every single endpoint that we have."
+    },
+    {
+      "start": 2754.452,
+      "end": 2757.982,
+      "text": "We have all of the individual ones for agents and sessions and"
+    },
+    {
+      "start": 2758.012,
+      "end": 2758.672,
+      "text": "environments."
+    },
+    {
+      "start": 2759.652,
+      "end": 2763.092,
+      "text": "We have some sub-endpoints for listing all of the events or streaming them live to"
+    },
+    {
+      "start": 2763.132,
+      "end": 2766.072,
+      "text": "your application. All that information is kind of available here."
+    },
+    {
+      "start": 2767.172,
+      "end": 2770.462,
+      "text": "And if you're curious and you have Claude code access, ask Claude code about Claude"
+    },
+    {
+      "start": 2770.512,
+      "end": 2774.092,
+      "text": "managed agents. It will most likely use the skill that I mentioned"
+    },
+    {
+      "start": 2775.152,
+      "end": 2776.572,
+      "text": "and answer your questions for you."
+    },
+    {
+      "start": 2777.972,
+      "end": 2781.772,
+      "text": "In terms of using Claude managed agents with OAuth, you do need an"
+    },
+    {
+      "start": 2781.832,
+      "end": 2783.632,
+      "text": "API key for now."
+    },
+    {
+      "start": 2785.632,
+      "end": 2789.522,
+      "text": "We have not yet pursued something like enabling"
+    },
+    {
+      "start": 2790.072,
+      "end": 2792.612,
+      "text": "OAuth, so to speak, for our developer APIs."
+    },
+    {
+      "start": 2793.912,
+      "end": 2796.092,
+      "text": "If that is something that is especially interesting,"
+    },
+    {
+      "start": 2796.992,
+      "end": 2799.952,
+      "text": "maybe give us the feedback. That's interesting to know."
+    },
+    {
+      "start": 2801.712,
+      "end": 2804.712,
+      "text": "Awesome. A question from Isaac Newton, directly from him."
+    },
+    {
+      "start": 2805.662,
+      "end": 2809.422,
+      "text": "\"In yesterday's call, Tariq said people should bias to using"
+    },
+    {
+      "start": 2809.532,
+      "end": 2811.152,
+      "text": "skills over creating sub-agents."
+    },
+    {
+      "start": 2811.832,
+      "end": 2815.172,
+      "text": "With that context, what is the underlying architectural question you think we"
+    },
+    {
+      "start": 2815.192,
+      "end": 2819.032,
+      "text": "should ask now to decide between creating a managed agent versus"
+    },
+    {
+      "start": 2819.052,
+      "end": 2819.702,
+      "text": "deploying a skill?\""
+    },
+    {
+      "start": 2821.552,
+      "end": 2822.812,
+      "text": "Ooh, that's a good question. I"
+    },
+    {
+      "start": 2822.832,
+      "end": 2826.792,
+      "text": "agree with"
+    },
+    {
+      "start": 2826.972,
+      "end": 2830.392,
+      "text": "what Tariq said. I think that for the most part, you"
+    },
+    {
+      "start": 2830.452,
+      "end": 2834.352,
+      "text": "probably don't need a sub-agent for every little nitty-gritty thing that"
+    },
+    {
+      "start": 2834.392,
+      "end": 2834.732,
+      "text": "you need."
+    },
+    {
+      "start": 2836.112,
+      "end": 2838.632,
+      "text": "Instead, you should develop skills that use them."
+    },
+    {
+      "start": 2838.692,
+      "end": 2842.312,
+      "text": "However, that is not, I would say, in"
+    },
+    {
+      "start": 2842.372,
+      "end": 2845.872,
+      "text": "conflict with using something like Claude managed agents, right?"
+    },
+    {
+      "start": 2846.272,
+      "end": 2849.132,
+      "text": "So if you were to build a deployed"
+    },
+    {
+      "start": 2850.092,
+      "end": 2854.022,
+      "text": "application that you want your end users to have"
+    },
+    {
+      "start": 2854.112,
+      "end": 2857.822,
+      "text": "access to some sort of agent, you could use something like Claude managed agents,"
+    },
+    {
+      "start": 2858.392,
+      "end": 2862.232,
+      "text": "define that single agent, and give it access to those skills that you"
+    },
+    {
+      "start": 2862.252,
+      "end": 2862.741,
+      "text": "defined,"
+    },
+    {
+      "start": 2863.672,
+      "end": 2866.942,
+      "text": "and it could be the same exact skill format that you use in something like Claude"
+    },
+    {
+      "start": 2867.012,
+      "end": 2868.952,
+      "text": "code as a consumer yourself."
+    },
+    {
+      "start": 2870.512,
+      "end": 2873.112,
+      "text": "And they will have access to those things in your application."
+    },
+    {
+      "start": 2873.132,
+      "end": 2876.172,
+      "text": "So you can develop a consumer application yourself that has a bunch of skills,"
+    },
+    {
+      "start": 2876.772,
+      "end": 2880.652,
+      "text": "single agent ever. You don't need a sub-agent or an individual agent for"
+    },
+    {
+      "start": 2880.692,
+      "end": 2883.392,
+      "text": "everything. Just give it the right skills, and then it'll go from there."
+    },
+    {
+      "start": 2884.122,
+      "end": 2887.172,
+      "text": "I hope that answered the question, Isaac Newton."
+    },
+    {
+      "start": 2888.452,
+      "end": 2889.692,
+      "text": "Mr. Newton, let us know."
+    },
+    {
+      "start": 2891.252,
+      "end": 2893.172,
+      "text": "Another question. This one's from Saad."
+    },
+    {
+      "start": 2893.712,
+      "end": 2895.342,
+      "text": "They asked: \"Where do agents live?"
+    },
+    {
+      "start": 2895.632,
+      "end": 2899.232,
+      "text": "I'm asking because I'm thinking about using the same agent in different tunnel in"
+    },
+    {
+      "start": 2899.272,
+      "end": 2902.992,
+      "text": "our work, interior design. We already use different tools like AutoCAD,"
+    },
+    {
+      "start": 2903.172,
+      "end": 2906.712,
+      "text": "SketchUp, Onshape, our interior CRM that have an"
+    },
+    {
+      "start": 2906.772,
+      "end": 2907.332,
+      "text": "MCP.\""
+    },
+    {
+      "start": 2908.592,
+      "end": 2912.392,
+      "text": "Mm-hmm. I think I understand the"
+    },
+    {
+      "start": 2912.432,
+      "end": 2913.071,
+      "text": "question."
+    },
+    {
+      "start": 2913.952,
+      "end": 2915.352,
+      "text": "Jason, you should steer me if I didn't."
+    },
+    {
+      "start": 2917.412,
+      "end": 2920.752,
+      "text": "So the agents themselves are deployed and running."
+    },
+    {
+      "start": 2921.222,
+      "end": 2925.032,
+      "text": "Anthropic is deploying and running these agents on your behalf, meaning"
+    },
+    {
+      "start": 2925.272,
+      "end": 2928.652,
+      "text": "you don't have to worry about any of the process of hosting some"
+    },
+    {
+      "start": 2928.732,
+      "end": 2932.522,
+      "text": "server-side service for your agent APIs and"
+    },
+    {
+      "start": 2932.752,
+      "end": 2935.092,
+      "text": "accessing those and making that robust and secure,"
+    },
+    {
+      "start": 2935.932,
+      "end": 2939.072,
+      "text": "or giving that access to a fleet of sandboxes or anything like that."
+    },
+    {
+      "start": 2939.312,
+      "end": 2942.962,
+      "text": "We took care of all that essentially for you to make that part kind of"
+    },
+    {
+      "start": 2943.572,
+      "end": 2945.032,
+      "text": "not necessary for you."
+    },
+    {
+      "start": 2946.112,
+      "end": 2949.752,
+      "text": "But you can give Claude access to something like your AutoCAD"
+    },
+    {
+      "start": 2949.832,
+      "end": 2950.252,
+      "text": "MCP"
+    },
+    {
+      "start": 2951.612,
+      "end": 2953.772,
+      "text": "by providing it with an MCP server URL,"
+    },
+    {
+      "start": 2954.672,
+      "end": 2957.952,
+      "text": "and then you can use this kind of concept that we have called credential vaults"
+    },
+    {
+      "start": 2958.712,
+      "end": 2959.912,
+      "text": "that I kind of hinted at a little bit."
+    },
+    {
+      "start": 2960.032,
+      "end": 2963.272,
+      "text": "Our developer docs have more information about them, but go over"
+    },
+    {
+      "start": 2963.592,
+      "end": 2967.504,
+      "text": "what-Like how to connect to an external MCP server"
+    },
+    {
+      "start": 2967.704,
+      "end": 2971.294,
+      "text": "that's maybe available remotely on the internet by providing it whatever"
+    },
+    {
+      "start": 2971.304,
+      "end": 2972.684,
+      "text": "credentials you need. So"
+    },
+    {
+      "start": 2974.824,
+      "end": 2978.784,
+      "text": "even though the agent is deployed in place one and the"
+    },
+    {
+      "start": 2978.824,
+      "end": 2981.984,
+      "text": "MCP server is deployed in place two, it doesn't mean that you can't connect those"
+    },
+    {
+      "start": 2982.004,
+      "end": 2985.964,
+      "text": "two things, right? That's one of the premises of MCP to begin with is"
+    },
+    {
+      "start": 2986.004,
+      "end": 2989.744,
+      "text": "to make that connectivity a little bit more standardized and easy to do."
+    },
+    {
+      "start": 2989.754,
+      "end": 2992.134,
+      "text": "And we really leaned into that with something like cloud-managed agents."
+    },
+    {
+      "start": 2995.264,
+      "end": 2995.584,
+      "text": "Awesome."
+    },
+    {
+      "start": 2997.444,
+      "end": 2998.464,
+      "text": "A few more questions."
+    },
+    {
+      "start": 2999.344,
+      "end": 2999.394,
+      "text": "Yeah."
+    },
+    {
+      "start": 2999.744,
+      "end": 3001.304,
+      "text": "We have a question from Jaegon Lee here."
+    },
+    {
+      "start": 3001.344,
+      "end": 3005.244,
+      "text": "They asked, \"I'm developing a user-facing agent and struggling with the trade-off"
+    },
+    {
+      "start": 3005.264,
+      "end": 3006.853,
+      "text": "between control and flexibility."
+    },
+    {
+      "start": 3007.544,
+      "end": 3011.084,
+      "text": "When I tighten the security harness to save tokens and ensure safety, the agent"
+    },
+    {
+      "start": 3011.104,
+      "end": 3013.014,
+      "text": "feels too rigid from a UX perspective."
+    },
+    {
+      "start": 3013.724,
+      "end": 3017.324,
+      "text": "How do you recommend striking the right balance between 'secure, efficient"
+    },
+    {
+      "start": 3017.404,
+      "end": 3020.624,
+      "text": "harness' and 'a fluid user experience?'\""
+    },
+    {
+      "start": 3022.404,
+      "end": 3025.384,
+      "text": "Yeah. So really, it's a really, really good question."
+    },
+    {
+      "start": 3026.384,
+      "end": 3030.044,
+      "text": "It's something that Anthropic and probably any agent developer out there"
+    },
+    {
+      "start": 3030.204,
+      "end": 3031.064,
+      "text": "wrangles with often."
+    },
+    {
+      "start": 3033.564,
+      "end": 3033.924,
+      "text": "I think my"
+    },
+    {
+      "start": 3034.784,
+      "end": 3038.724,
+      "text": "personal take on this is that the premise"
+    },
+    {
+      "start": 3038.844,
+      "end": 3041.084,
+      "text": "of why LLMs like Claude"
+    },
+    {
+      "start": 3041.884,
+      "end": 3044.824,
+      "text": "is powerful and is really enabling people"
+    },
+    {
+      "start": 3045.464,
+      "end": 3048.844,
+      "text": "is because people are giving it increased levels of"
+    },
+    {
+      "start": 3048.924,
+      "end": 3052.124,
+      "text": "access and increased levels of control to"
+    },
+    {
+      "start": 3053.164,
+      "end": 3056.584,
+      "text": "define their own destiny, right? I think Claude or"
+    },
+    {
+      "start": 3056.924,
+      "end": 3059.164,
+      "text": "agents like Claude Code,"
+    },
+    {
+      "start": 3060.504,
+      "end": 3063.574,
+      "text": "or any other kind of coding agent, would be less powerful if"
+    },
+    {
+      "start": 3064.704,
+      "end": 3068.584,
+      "text": "every single thing was hard-coded as a decision that Claude can make and"
+    },
+    {
+      "start": 3068.644,
+      "end": 3071.784,
+      "text": "nothing else, kind of rigidly not allowing it to do anything else."
+    },
+    {
+      "start": 3073.444,
+      "end": 3077.284,
+      "text": "And I think one of the reasons why things like Claude Code are so useful is"
+    },
+    {
+      "start": 3077.304,
+      "end": 3078.964,
+      "text": "because that isn't the case, right?"
+    },
+    {
+      "start": 3079.144,
+      "end": 3082.904,
+      "text": "We don't define if this, then that workflows when using Claude Code."
+    },
+    {
+      "start": 3083.504,
+      "end": 3087.404,
+      "text": "We give Claude general instructions and a pool of tools and"
+    },
+    {
+      "start": 3087.464,
+      "end": 3091.454,
+      "text": "resources that it can access, and we benefit from"
+    },
+    {
+      "start": 3091.464,
+      "end": 3093.213,
+      "text": "Claude being intelligent enough to be able to"
+    },
+    {
+      "start": 3094.464,
+      "end": 3096.524,
+      "text": "figure out how to do that on its own."
+    },
+    {
+      "start": 3096.924,
+      "end": 3100.833,
+      "text": "To kind of humanize things a little bit more, if I had a coworker, I would not"
+    },
+    {
+      "start": 3100.864,
+      "end": 3104.464,
+      "text": "want to have to build out step-by-step instructions on how to do every single task"
+    },
+    {
+      "start": 3104.504,
+      "end": 3108.434,
+      "text": "that I need them to do. I would hopefully give them access to the right"
+    },
+    {
+      "start": 3108.464,
+      "end": 3112.384,
+      "text": "things and expect that they are, because they are peers of"
+    },
+    {
+      "start": 3112.424,
+      "end": 3116.084,
+      "text": "mine, can get the job done however they decide is appropriate."
+    },
+    {
+      "start": 3117.504,
+      "end": 3118.424,
+      "text": "That all being said,"
+    },
+    {
+      "start": 3119.264,
+      "end": 3123.164,
+      "text": "we are not yet at the world where we can probably trust these things to run"
+    },
+    {
+      "start": 3123.184,
+      "end": 3127.164,
+      "text": "our entire lives. I think that anybody would agree that is not quite"
+    },
+    {
+      "start": 3127.204,
+      "end": 3131.014,
+      "text": "where any LLMs are today. And that's why it's"
+    },
+    {
+      "start": 3131.024,
+      "end": 3134.604,
+      "text": "important to build primitives like security for your"
+    },
+    {
+      "start": 3134.624,
+      "end": 3137.464,
+      "text": "credentials to make sure that Claude is never actually seeing the credentials"
+    },
+    {
+      "start": 3137.504,
+      "end": 3140.964,
+      "text": "themselves. It's just if Claude wants to use an MCP server that needs a"
+    },
+    {
+      "start": 3140.984,
+      "end": 3144.914,
+      "text": "credential, you have a layer that takes care of that for you, but don't"
+    },
+    {
+      "start": 3146.204,
+      "end": 3150.084,
+      "text": "put that API key in a user message because then"
+    },
+    {
+      "start": 3150.124,
+      "end": 3153.744,
+      "text": "Claude will see it, and then that key can be, so to speak,"
+    },
+    {
+      "start": 3153.804,
+      "end": 3155.884,
+      "text": "exfiltrated, which is not safe."
+    },
+    {
+      "start": 3157.444,
+      "end": 3158.044,
+      "text": "Alternatively, you"
+    },
+    {
+      "start": 3158.884,
+      "end": 3162.294,
+      "text": "should also build permission primitives and policies like we have with"
+    },
+    {
+      "start": 3162.304,
+      "end": 3166.044,
+      "text": "cloud-managed agents to be able to figure out which things and which"
+    },
+    {
+      "start": 3166.053,
+      "end": 3169.924,
+      "text": "tools are dangerous and require what we say"
+    },
+    {
+      "start": 3169.984,
+      "end": 3173.833,
+      "text": "is human in the loop, versus ones that are safer to run and don't have"
+    },
+    {
+      "start": 3173.904,
+      "end": 3177.894,
+      "text": "as rigid of a structure like read a file or list all"
+    },
+    {
+      "start": 3177.924,
+      "end": 3181.304,
+      "text": "of your files, or maybe search for a code"
+    },
+    {
+      "start": 3181.324,
+      "end": 3184.984,
+      "text": "base. Those are probably things that you are probably going to be comfortable"
+    },
+    {
+      "start": 3185.044,
+      "end": 3187.324,
+      "text": "giving Claude unbridled access to."
+    },
+    {
+      "start": 3190.104,
+      "end": 3192.084,
+      "text": "Awesome. Got a few more questions."
+    },
+    {
+      "start": 3193.244,
+      "end": 3196.964,
+      "text": "Mo is asking, \"So if we were working on an async SMS"
+    },
+    {
+      "start": 3197.004,
+      "end": 3200.524,
+      "text": "marketplace where a supplier's text might wait hours for a buyer,"
+    },
+    {
+      "start": 3201.144,
+      "end": 3205.124,
+      "text": "can an agent session pause indefinitely until something like a Twilio webhook wakes"
+    },
+    {
+      "start": 3205.224,
+      "end": 3208.464,
+      "text": "up, or is there a max session timeout we need to design around?\""
+    },
+    {
+      "start": 3212.944,
+      "end": 3215.314,
+      "text": "Okay. I want to make sure I understand the question, but"
+    },
+    {
+      "start": 3216.444,
+      "end": 3219.564,
+      "text": "from what I understand, is the ask around"
+    },
+    {
+      "start": 3219.684,
+      "end": 3222.864,
+      "text": "is my session going to effectively"
+    },
+    {
+      "start": 3222.904,
+      "end": 3226.664,
+      "text": "become terminal or archived or inaccessible"
+    },
+    {
+      "start": 3226.784,
+      "end": 3228.344,
+      "text": "after a certain point of inactivity?"
+    },
+    {
+      "start": 3229.284,
+      "end": 3233.244,
+      "text": "Is that more or less the question? Or is the question more around"
+    },
+    {
+      "start": 3233.944,
+      "end": 3237.824,
+      "text": "can I trigger a session to be resumed based on a webhook that is emitted"
+    },
+    {
+      "start": 3237.864,
+      "end": 3241.784,
+      "text": "and maybe Anthropic is listening to that and can react to it?"
+    },
+    {
+      "start": 3242.704,
+      "end": 3244.384,
+      "text": "I guess the question is probably a little bit of both."
+    },
+    {
+      "start": 3245.864,
+      "end": 3246.854,
+      "text": "Answering the first one-"
+    },
+    {
+      "start": 3247.244,
+      "end": 3249.374,
+      "text": "Mo just commented. They said the latter."
+    },
+    {
+      "start": 3249.964,
+      "end": 3253.584,
+      "text": "The latter. Okay. To quickly answer the first one, sessions can be"
+    },
+    {
+      "start": 3253.664,
+      "end": 3257.564,
+      "text": "idled for weeks, months, however long as needed, and resumed"
+    },
+    {
+      "start": 3258.224,
+      "end": 3259.944,
+      "text": "by just sending a new event to the session."
+    },
+    {
+      "start": 3260.004,
+      "end": 3261.504,
+      "text": "So you don't have to worry too much about"
+    },
+    {
+      "start": 3262.304,
+      "end": 3266.094,
+      "text": "long idle times. And we don't charge for sessions that are idled or"
+    },
+    {
+      "start": 3266.184,
+      "end": 3269.224,
+      "text": "anything like that, so you shouldn't have to worry about deleting and cleaning"
+    },
+    {
+      "start": 3269.244,
+      "end": 3269.584,
+      "text": "those up."
+    },
+    {
+      "start": 3270.484,
+      "end": 3273.504,
+      "text": "On the latter point, we are actually starting to explore"
+    },
+    {
+      "start": 3273.514,
+      "end": 3276.044,
+      "text": "exactly what you're kind of describing here,"
+    },
+    {
+      "start": 3277.144,
+      "end": 3281.064,
+      "text": "where you can, without having to set up a lot of work on your"
+    },
+    {
+      "start": 3281.124,
+      "end": 3285.084,
+      "text": "end, define trigger points for a"
+    },
+    {
+      "start": 3285.164,
+      "end": 3288.844,
+      "text": "session to either be created or for an existing session to be"
+    },
+    {
+      "start": 3289.424,
+      "end": 3290.364,
+      "text": "resumed or,"
+    },
+    {
+      "start": 3291.404,
+      "end": 3292.484,
+      "text": "yeah, followed up on."
+    },
+    {
+      "start": 3293.704,
+      "end": 3297.584,
+      "text": "And I can't speak too much into detail there, but"
+    },
+    {
+      "start": 3297.924,
+      "end": 3301.044,
+      "text": "it is our hope to exactly unblock exactly what you're describing."
+    },
+    {
+      "start": 3301.744,
+      "end": 3302.084,
+      "text": "And we"
+    },
+    {
+      "start": 3303.824,
+      "end": 3306.294,
+      "text": "have been working on this for a little bit now, so we should have more to share"
+    },
+    {
+      "start": 3306.324,
+      "end": 3309.034,
+      "text": "there soon."
+    },
+    {
+      "start": 3309.064,
+      "end": 3309.444,
+      "text": "Awesome."
+    },
+    {
+      "start": 3310.464,
+      "end": 3312.164,
+      "text": "Few more questions. I know we have a few minutes left."
+    },
+    {
+      "start": 3313.164,
+      "end": 3315.184,
+      "text": "We have a question here from Grace Estevan."
+    },
+    {
+      "start": 3315.454,
+      "end": 3319.444,
+      "text": "\"For a real-time voice use case where a supervisor agent delegates to"
+    },
+    {
+      "start": 3319.524,
+      "end": 3322.524,
+      "text": "specialists mid-call, what's the canonical handoff pattern?"
+    },
+    {
+      "start": 3323.144,
+      "end": 3327.124,
+      "text": "Specifically, does the sub-agent see the full call transcript, or do I need"
+    },
+    {
+      "start": 3327.144,
+      "end": 3330.774,
+      "text": "to pass a curated context? And can I stream the sub-agent's response"
+    },
+    {
+      "start": 3330.964,
+      "end": 3334.284,
+      "text": "back through the supervisor to the voice channel without adding a full round trip"
+    },
+    {
+      "start": 3334.324,
+      "end": 3334.844,
+      "text": "of latency?\""
+    },
+    {
+      "start": 3335.684,
+      "end": 3337.836,
+      "text": "Yeah. Okay.Such a good question."
+    },
+    {
+      "start": 3339.516,
+      "end": 3343.376,
+      "text": "We are currently in the middle of working on what"
+    },
+    {
+      "start": 3343.916,
+      "end": 3347.196,
+      "text": "I would call our basic multi-agent integration."
+    },
+    {
+      "start": 3347.256,
+      "end": 3348.876,
+      "text": "I don't want to call it basic in that it's not powerful."
+    },
+    {
+      "start": 3348.936,
+      "end": 3352.016,
+      "text": "It's just basic in terms of it being vanilla"
+    },
+    {
+      "start": 3353.236,
+      "end": 3354.796,
+      "text": "multi-agent, sub-agents behavior."
+    },
+    {
+      "start": 3355.656,
+      "end": 3358.956,
+      "text": "And those will offer a number of different options."
+    },
+    {
+      "start": 3359.436,
+      "end": 3361.976,
+      "text": "One will be a typical"
+    },
+    {
+      "start": 3362.856,
+      "end": 3366.566,
+      "text": "one agent sends a specific message to another agent, and then"
+    },
+    {
+      "start": 3366.636,
+      "end": 3370.236,
+      "text": "that other agent responds. So it's not actually"
+    },
+    {
+      "start": 3370.296,
+      "end": 3374.096,
+      "text": "a fork or a clone of the context window and a"
+    },
+    {
+      "start": 3374.156,
+      "end": 3378.116,
+      "text": "continuation from there. It's like Claude 1 deciding, \"Hey,"
+    },
+    {
+      "start": 3378.316,
+      "end": 3381.496,
+      "text": "I need Claude 2 to go do something for me.\" I'm going to send it"
+    },
+    {
+      "start": 3382.116,
+      "end": 3382.616,
+      "text": "essentially a"
+    },
+    {
+      "start": 3383.596,
+      "end": 3387.536,
+      "text": "DM to go do something. So that's one flavor of things that we're exploring."
+    },
+    {
+      "start": 3387.966,
+      "end": 3389.736,
+      "text": "And then the other one is more of"
+    },
+    {
+      "start": 3390.576,
+      "end": 3392.496,
+      "text": "similar, where you don't actually"
+    },
+    {
+      "start": 3393.336,
+      "end": 3395.886,
+      "text": "pass off the entire context window, but you"
+    },
+    {
+      "start": 3396.936,
+      "end": 3400.856,
+      "text": "enable Claude and the other Claude to have a longer conversation, a"
+    },
+    {
+      "start": 3400.896,
+      "end": 3402.055,
+      "text": "little bit more of a back and forth."
+    },
+    {
+      "start": 3403.156,
+      "end": 3406.496,
+      "text": "And different Claudes can talk to other different Claudes."
+    },
+    {
+      "start": 3408.036,
+      "end": 3411.956,
+      "text": "And then separately from that, we are also exploring something along the lines of"
+    },
+    {
+      "start": 3412.976,
+      "end": 3416.896,
+      "text": "the handoff that you described, where instead of Claude having to write"
+    },
+    {
+      "start": 3416.976,
+      "end": 3420.936,
+      "text": "a full message from scratch, we effectively clone the context window and"
+    },
+    {
+      "start": 3420.976,
+      "end": 3424.656,
+      "text": "proceed from there. That one is probably not going to come for a little"
+    },
+    {
+      "start": 3424.696,
+      "end": 3428.496,
+      "text": "while, just because we want to make sure that everything that we build is"
+    },
+    {
+      "start": 3428.536,
+      "end": 3432.046,
+      "text": "robust and just actually useful. We don't want to just"
+    },
+    {
+      "start": 3432.096,
+      "end": 3435.996,
+      "text": "yeet a feature out there that it might not actually work the"
+    },
+    {
+      "start": 3436.016,
+      "end": 3437.656,
+      "text": "way we want it to, or the way that you would want it to."
+    },
+    {
+      "start": 3439.216,
+      "end": 3440.936,
+      "text": "However, all of this is coming very soon."
+    },
+    {
+      "start": 3441.936,
+      "end": 3445.356,
+      "text": "My recommendation is that you can stitch some of this together today using the"
+    },
+    {
+      "start": 3445.396,
+      "end": 3448.916,
+      "text": "sessions APIs yourself. So you can create a different session for each one of your"
+    },
+    {
+      "start": 3448.976,
+      "end": 3452.906,
+      "text": "agents and decide that certain status changes or"
+    },
+    {
+      "start": 3453.176,
+      "end": 3456.836,
+      "text": "events can be brought back and forth between those agents."
+    },
+    {
+      "start": 3457.816,
+      "end": 3461.616,
+      "text": "However, I think it's probably going to"
+    },
+    {
+      "start": 3462.656,
+      "end": 3465.315,
+      "text": "take a lot more work on your end in order to get it working correctly."
+    },
+    {
+      "start": 3465.405,
+      "end": 3469.196,
+      "text": "I would probably just hold off until we get first-class support for multi-agents."
+    },
+    {
+      "start": 3471.876,
+      "end": 3473.315,
+      "text": "Awesome. Great, Seth. Thank you so much."
+    },
+    {
+      "start": 3473.716,
+      "end": 3474.516,
+      "text": "Of course."
+    },
+    {
+      "start": 3474.565,
+      "end": 3478.216,
+      "text": "Well, we're just about at time. Sorry we weren't able to get to every single"
+    },
+    {
+      "start": 3478.256,
+      "end": 3478.776,
+      "text": "question, but"
+    },
+    {
+      "start": 3479.596,
+      "end": 3480.456,
+      "text": "two last ones."
+    },
+    {
+      "start": 3481.936,
+      "end": 3485.736,
+      "text": "Pavelkral.eu is asking, can we get access to the repo that you were showing just"
+    },
+    {
+      "start": 3485.756,
+      "end": 3485.916,
+      "text": "now?"
+    },
+    {
+      "start": 3487.676,
+      "end": 3490.776,
+      "text": "I can definitely. I will put up a stub of it."
+    },
+    {
+      "start": 3493.096,
+      "end": 3496.926,
+      "text": "Ooh, Jason, I could probably do this within the next"
+    },
+    {
+      "start": 3496.996,
+      "end": 3499.036,
+      "text": "couple of hours, if that's okay with everybody."
+    },
+    {
+      "start": 3499.396,
+      "end": 3499.406,
+      "text": "Cool."
+    },
+    {
+      "start": 3499.436,
+      "end": 3501.856,
+      "text": "I know that the hackathon is ending somewhat soon."
+    },
+    {
+      "start": 3501.896,
+      "end": 3503.416,
+      "text": "I just want to make sure that everybody has access to it."
+    },
+    {
+      "start": 3503.456,
+      "end": 3506.276,
+      "text": "But absolutely, there's nothing super fancy in there."
+    },
+    {
+      "start": 3506.696,
+      "end": 3507.856,
+      "text": "I will gladly share it."
+    },
+    {
+      "start": 3507.936,
+      "end": 3508.296,
+      "text": "Amazing."
+    },
+    {
+      "start": 3509.116,
+      "end": 3511.445,
+      "text": "And then final one, a question from"
+    },
+    {
+      "start": 3511.516,
+      "end": 3515.276,
+      "text": "Junkzx3. Any chance"
+    },
+    {
+      "start": 3515.616,
+      "end": 3519.476,
+      "text": "memory_stores research preview access lands before Sunday?"
+    },
+    {
+      "start": 3519.896,
+      "end": 3523.416,
+      "text": "I built a- ... JS fallback that would migrate if possible. Thank you."
+    },
+    {
+      "start": 3523.516,
+      "end": 3523.876,
+      "text": "Yes."
+    },
+    {
+      "start": 3524.696,
+      "end": 3528.056,
+      "text": "That is incredible timing. Something that I was going to hint at and forgot."
+    },
+    {
+      "start": 3529.616,
+      "end": 3532.976,
+      "text": "Our memory store will probably be out in the"
+    },
+    {
+      "start": 3533.116,
+      "end": 3534.696,
+      "text": "next couple hours."
+    },
+    {
+      "start": 3536.536,
+      "end": 3538.016,
+      "text": "So stay tuned."
+    },
+    {
+      "start": 3538.976,
+      "end": 3542.356,
+      "text": "Our developer docs and our Twitter will probably announce when this happens."
+    },
+    {
+      "start": 3543.836,
+      "end": 3545.476,
+      "text": "There you go, folks. You heard it here first."
+    },
+    {
+      "start": 3546.026,
+      "end": 3546.056,
+      "text": "Yeah."
+    },
+    {
+      "start": 3546.076,
+      "end": 3548.896,
+      "text": "In a few hours, we'll have that memory store out for you guys to use with Claude"
+    },
+    {
+      "start": 3548.956,
+      "end": 3549.616,
+      "text": "Manage Agents."
+    },
+    {
+      "start": 3551.076,
+      "end": 3551.896,
+      "text": "Michael, this was awesome."
+    },
+    {
+      "start": 3552.446,
+      "end": 3552.446,
+      "text": "Of course."
+    },
+    {
+      "start": 3552.456,
+      "end": 3554.336,
+      "text": "Thank you so much for sharing this and joining."
+    },
+    {
+      "start": 3554.416,
+      "end": 3557.116,
+      "text": "A lot of folks are in the chat really, really excited about this."
+    },
+    {
+      "start": 3557.156,
+      "end": 3557.806,
+      "text": "Thankful for this-"
+    },
+    {
+      "start": 3558.126,
+      "end": 3558.696,
+      "text": "... walkthrough. So-"
+    },
+    {
+      "start": 3558.126,
+      "end": 3558.126,
+      "text": "Of course"
+    },
+    {
+      "start": 3559.376,
+      "end": 3559.426,
+      "text": "Yeah"
+    },
+    {
+      "start": 3559.696,
+      "end": 3563.276,
+      "text": "... again, folks, we'll get that stub of the repo to you in the next few hours."
+    },
+    {
+      "start": 3564.176,
+      "end": 3568.086,
+      "text": "You saw Michael flash up here his account on X as"
+    },
+    {
+      "start": 3568.136,
+      "end": 3570.496,
+      "text": "well, so you can also hit him up, slide into the DMs."
+    },
+    {
+      "start": 3570.936,
+      "end": 3571.116,
+      "text": "Mm-hmm."
+    },
+    {
+      "start": 3571.796,
+      "end": 3575.616,
+      "text": "But then otherwise, yeah, this chat will be available in resources after the fact,"
+    },
+    {
+      "start": 3575.716,
+      "end": 3578.936,
+      "text": "so you can review it, learn from Michael's best practices again."
+    },
+    {
+      "start": 3578.956,
+      "end": 3581.716,
+      "text": "And otherwise, happy building. We'll be in touch-"
+    },
+    {
+      "start": 3582.576,
+      "end": 3582.586,
+      "text": "Yeah"
+    },
+    {
+      "start": 3582.586,
+      "end": 3584.056,
+      "text": "... with more chats tomorrow as well."
+    },
+    {
+      "start": 3585.196,
+      "end": 3586.816,
+      "text": "I'm really excited to see what everybody builds."
+    },
+    {
+      "start": 3588.016,
+      "end": 3589.056,
+      "text": "Thank you all. Happy building."
+    }
+  ],
+  "summary": {
+    "tldr": "Michael walks through Claude Managed Agents — agent/environment/session primitives, event stream types, outcomes, credential vaults — and live-vibe-codes a Citi Bike analytics app using the skill that teaches Claude Code the Managed Agents API.",
+    "overview": "Jason opens the second live session of the hackathon and hands off to Michael for a walkthrough of Claude Managed Agents, released a few weeks prior. Michael covers the core primitives (agent, environment, session), the sandbox container model, credential vaults for MCP auth, permission policies, automatic context management, and the full taxonomy of user, agent, and session events. He then live-builds a Citi Bike analytics web app by pointing Claude Code at a spec.md and the publicly available Managed Agents skill, while tour­ing the developer console's agent versioning, session tracing, and Ask Claude debugging view. The session closes with rapid-fire Q&A on outcomes, multi-agent handoffs, long-idle sessions, OAuth, and sub-agents vs skills.",
+    "speakers": [
+      "Jason",
+      "Michael Cohen"
+    ],
+    "topics": [
+      {
+        "timestamp": 142.3,
+        "title": "What Managed Agents Is",
+        "summary": "Overview of the managed harness, sandbox containers, credential handling, context management, and retries."
+      },
+      {
+        "timestamp": 363.5,
+        "title": "Agent, Environment, Session",
+        "summary": "The three core resources, how they're versioned, and the one-time vs per-use lifecycle."
+      },
+      {
+        "timestamp": 754.4,
+        "title": "Event Stream Taxonomy",
+        "summary": "User events, agent events, tool use/results, session status, span events, and the outcome event."
+      },
+      {
+        "timestamp": 869.5,
+        "title": "Outcomes (Research Preview)",
+        "summary": "Self-verification rubrics as plain text that make Claude loop until criteria are met."
+      },
+      {
+        "timestamp": 1619.4,
+        "title": "Citi Bike Live Build",
+        "summary": "Vibe-coding a web app against a spec.md using the Managed Agents skill in Claude Code."
+      },
+      {
+        "timestamp": 2149.2,
+        "title": "Developer Console Tour",
+        "summary": "Agent versioning, session transcripts, tool approvals, and the Ask Claude debugging side-session."
+      },
+      {
+        "timestamp": 2486.7,
+        "title": "Running the Finished App",
+        "summary": "Live session streams status, Bash, Pandas, Matplotlib, and a custom render_map tool rendering UI."
+      },
+      {
+        "timestamp": 2651.8,
+        "title": "Rapid Q&A",
+        "summary": "Sub-agents vs skills, OAuth, long-idle sessions, webhook triggers, multi-agent handoffs, memory store."
+      }
+    ],
+    "qa": [
+      {
+        "timestamp": 479.6,
+        "question": "For agents running hours or days, what's the best way to handle long-horizon context?",
+        "answer": "Managed Agents auto-handles context, compacting around the one-million-token window for supported models. Alternative strategies beyond compaction are in progress.",
+        "asker": "Lily Zhong"
+      },
+      {
+        "timestamp": 538,
+        "question": "Can we create, update, monitor, edit, start, stop, manage agents programmatically?",
+        "answer": "Yes — all of those operations have API and SDK endpoints; the developer console is optional.",
+        "asker": "UnicornFairy1"
+      },
+      {
+        "timestamp": 1161.2,
+        "question": "Is an outcome like a testing vector?",
+        "answer": "It's a self-verification rubric — plain text or markdown describing what 'done' looks like. Claude loops against it and self-corrects until the criteria are met.",
+        "asker": "Gil"
+      },
+      {
+        "timestamp": 1260.9,
+        "question": "Is outcomes available today or waitlist? How do I get access for the hackathon?",
+        "answer": "Currently in research preview with a waitlist; broader rollout expected in the next couple of weeks, no firm date.",
+        "asker": "Onchain Intel"
+      },
+      {
+        "timestamp": 1300.3,
+        "question": "Can the rubric call external APIs during verification, or is it constrained to the model's judgment?",
+        "answer": "The rubric is just text. Claude can use whatever tools and APIs are available in the session to verify — you can reference URLs or APIs in the rubric itself.",
+        "asker": "Onchain Intel"
+      },
+      {
+        "timestamp": 1401.6,
+        "question": "If a Managed Agent acts as a gatekeeper seeing spicy/troll images, what happens to that image on Anthropic's side?",
+        "answer": "Depends how you send it. Files uploaded to the container can be explicitly deleted from container and Files API. Image content blocks in user.message are never saved as files — just sent to Claude in-context.",
+        "asker": "Daniel"
+      },
+      {
+        "timestamp": 1534.3,
+        "question": "Is there a Managed Agent that can CRUD other agents?",
+        "answer": "Not first-class, due to safety and security considerations. Nothing stops you from giving an agent the API tools to do it yourself, though Michael wouldn't personally advocate for it.",
+        "asker": "Benj"
+      },
+      {
+        "timestamp": 2656.9,
+        "question": "What's the longest-running task Managed Agents have handled?",
+        "answer": "On the order of days — more than two, less than ten. No hard number on hand.",
+        "asker": "Ernie"
+      },
+      {
+        "timestamp": 2685.2,
+        "question": "Can we use Managed Agents outside the Claude console, and is OAuth supported?",
+        "answer": "Yes, direct API/SDK usage is fully supported — the console is optional. OAuth is not supported; an API key is currently required.",
+        "asker": "Daniel / Drumil Barot"
+      },
+      {
+        "timestamp": 2801.7,
+        "question": "Skills vs sub-agents — what's the architectural question for choosing Managed Agents vs a skill?",
+        "answer": "Not in conflict. Define a single Managed Agent and give it the skills it needs, same format as Claude Code skills — you rarely need a separate sub-agent per task.",
+        "asker": "Isaac Newton"
+      },
+      {
+        "timestamp": 2891.3,
+        "question": "Where do agents live? Can I use one agent across different tools/MCP servers like AutoCAD, SketchUp, our CRM?",
+        "answer": "Anthropic hosts and runs the agents. Connect external MCP servers via URL and use credential vaults to pass per-user credentials without Claude seeing them.",
+        "asker": "Saad"
+      },
+      {
+        "timestamp": 2999.7,
+        "question": "How to balance a tight security harness with fluid UX?",
+        "answer": "Give Claude latitude via tools and resources rather than hard-coded if-this-then-that flows, but lean on credential vaults and per-tool permission policies for anything dangerous.",
+        "asker": "Jaegon Lee"
+      },
+      {
+        "timestamp": 3190.1,
+        "question": "Can a session pause indefinitely until a Twilio webhook wakes it, or is there a max timeout?",
+        "answer": "Sessions can idle for weeks or months with no charge and resume on a new event. Webhook-triggered resumption is being explored but not yet available.",
+        "asker": "Mo"
+      },
+      {
+        "timestamp": 3310.5,
+        "question": "For real-time voice with a supervisor delegating to specialists, what's the canonical handoff pattern?",
+        "answer": "Basic multi-agent is in progress: one flavor is a directed message between agents, another is longer back-and-forth. Context-window cloning handoff is further out.",
+        "asker": "Grace Estevan"
+      },
+      {
+        "timestamp": 3511.5,
+        "question": "Any chance memory_store research preview access lands before Sunday?",
+        "answer": "Memory store is expected to ship within the next couple of hours; announcements will go out via developer docs and Twitter.",
+        "asker": "Junkzx3"
+      }
+    ],
+    "quotes": [
+      {
+        "timestamp": 1814.7,
+        "speaker": "Michael Cohen",
+        "text": "It's 2026, and no one writes code by hand anymore. So I figured I would not do the same for this demo.",
+        "why_it_matters": "Frames the live-build as a vibe-coded demo driven entirely through Claude Code."
+      },
+      {
+        "timestamp": 1839.7,
+        "speaker": "Michael Cohen",
+        "text": "We're teaching Claude Code how to use an API in order to build things with Claude. It's very meta, but this works really, really well.",
+        "why_it_matters": "Captures the pattern of shipping a skill that documents the Managed Agents API for coding agents."
+      },
+      {
+        "timestamp": 3096.9,
+        "speaker": "Michael Cohen",
+        "text": "If I had a coworker, I would not want to have to build out step-by-step instructions on every single task. I'd give them access to the right things and expect they can get the job done.",
+        "why_it_matters": "Summarizes the design philosophy behind giving the harness latitude instead of scripting it."
+      },
+      {
+        "timestamp": 1585.2,
+        "speaker": "Michael Cohen",
+        "text": "I would not personally advocate for doing this, but it's probably my job to say that I wouldn't advocate for doing this.",
+        "why_it_matters": "On wiring an agent with agent-management tools — acknowledges the hack works while flagging intentional caution."
+      },
+      {
+        "timestamp": 2630,
+        "speaker": "Michael Cohen",
+        "text": "Some of my peers have had sessions run for days at a time with no problems. We take care of all the nitty-gritty of retrying and context management.",
+        "why_it_matters": "Concrete datapoint on long-horizon session durability."
+      }
+    ],
+    "surprising": [
+      {
+        "timestamp": 1834.6,
+        "insight": "A public skill on Anthropic's skills repo teaches Claude Code how to call the Managed Agents API — ask Claude Code directly and it picks it up.",
+        "evidence": "\"We actually released into Claude Code and is available publicly on our skills repository… that skill actually teaches Claude how to use the Claude Managed Agents API.\""
+      },
+      {
+        "timestamp": 2285.7,
+        "insight": "Agents are versioned: editing a system prompt creates a V2, and sessions can explicitly pin to V1 or latest.",
+        "evidence": "\"I now have a V2 of the same agent, and I could decide to create sessions with the V1 version of this agent or the latest version.\""
+      },
+      {
+        "timestamp": 3247.2,
+        "insight": "Sessions can idle for weeks or months with no charge and resume on a new event — no cleanup job required.",
+        "evidence": "\"Sessions can be idled for weeks, months, however long as needed, and resumed by just sending a new event… we don't charge for sessions that are idled.\""
+      },
+      {
+        "timestamp": 1493.3,
+        "insight": "Image content blocks sent via user.message are passed directly to Claude and never persisted as files on Anthropic's side.",
+        "evidence": "\"Image content blocks are never included as files in the container. They're directly sent to Claude for it to process, and there's no file ever saved on our end.\""
+      },
+      {
+        "timestamp": 2406.2,
+        "insight": "The console has an Ask Claude side-session that inspects a specific session's transcript and can diagnose latency or prompt issues.",
+        "evidence": "\"You can ask it questions about why did something go wrong… analyze the performance, and figure out any weird latency issues for the session.\""
+      }
+    ],
+    "between_the_lines": [
+      {
+        "timestamp": 869.5,
+        "reading": "Outcomes being shown in slides while still waitlisted could read as a signal that it's Anthropic's preferred primitive for eval-driven agents.",
+        "evidence": "Michael apologizes for teasing Outcomes but spends significant time on it and describes \"really good uplift in some of the evals that we've been running when we do this sort of pattern.\""
+      },
+      {
+        "timestamp": 3335.7,
+        "reading": "The emphasis on directed-message multi-agent over context-window cloning suggests the team is deliberately avoiding fork-and-resume semantics for now.",
+        "evidence": "\"Instead of Claude having to write a full message from scratch, we effectively clone the context window… that one is probably not going to come for a little while.\""
+      },
+      {
+        "timestamp": 2801.7,
+        "reading": "The framing of 'single agent with skills' as the default architecture might hint that first-class sub-agents won't be positioned as the primary pattern even after they ship.",
+        "evidence": "\"You can develop a consumer application yourself that has a bunch of skills, single agent ever. You don't need a sub-agent or an individual agent for everything.\""
+      },
+      {
+        "timestamp": 3270.5,
+        "reading": "The mention of exploring trigger points for session creation or resumption suggests a webhook/scheduler primitive is on the near-term roadmap.",
+        "evidence": "\"We are actually starting to explore exactly what you're kind of describing here, where you can… define trigger points for a session to either be created or for an existing session to be resumed.\""
+      }
+    ],
+    "feature_guides": [
+      {
+        "timestamp": 363.5,
+        "name": "Agent resource",
+        "category": "feature",
+        "one_liner": "A reusable spec defining system prompt, model, tools, and skills — create once, reuse across sessions.",
+        "details": [
+          "Treat creation as a one-time (or handful-of-times) action, not per-chat.",
+          "If you want the agent to 'talk like a pirate,' define it once and reuse the agent ID.",
+          "Fields include model, name, system prompt, skills list, and tools list."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "You create them once, maybe a handful of times, and configure them on a per-need basis."
+      },
+      {
+        "timestamp": 378.5,
+        "name": "Environment resource",
+        "category": "feature",
+        "one_liner": "A container template controlling network egress policy and pre-installed packages for the sandbox.",
+        "details": [
+          "Restrict external websites via network allow-list for security-sensitive use cases.",
+          "Auto-install packages from Pip, npm, and other package managers on container init.",
+          "Create once and reuse across sessions instead of reconfiguring per run."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "The environment itself is like a template for how you want the containers to operate. You can control the network egress policy... as well as controlling which packages... are auto-installed."
+      },
+      {
+        "timestamp": 405.5,
+        "name": "Session resource",
+        "category": "feature",
+        "one_liner": "The per-conversation event stream between a user and Claude inside the harness; carries files, repos, and credentials.",
+        "details": [
+          "Upload files or GitHub repos at creation or mid-session.",
+          "Attach per-user MCP credentials via a vault ID so each end user uses their own Linear/Slack/etc. auth.",
+          "State management, retries, and checkpointing are handled by Anthropic."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "The session itself, which is really just effectively a conversation or an event stream between a user and Claude itself within the harness."
+      },
+      {
+        "timestamp": 667.9,
+        "name": "Credential vaults",
+        "category": "feature",
+        "one_liner": "Per-user credential storage for MCP servers that Claude can use without ever seeing the raw secrets.",
+        "details": [
+          "Provide a vault ID on the session; Claude invokes MCP tools through it.",
+          "Keeps API keys out of the context window, mitigating exfiltration risk.",
+          "Lets one deployed agent serve many end users with their own auth."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "We have some primitives in place for credential management in a way that keeps the actual credentials away from Claude itself, so it never has any kind of risks around data exfiltration."
+      },
+      {
+        "timestamp": 824,
+        "name": "Per-tool permission policies",
+        "category": "pattern",
+        "one_liner": "Configure which tools require end-user confirmation vs auto-execute, on a per-tool basis.",
+        "details": [
+          "Example: require explicit confirmation for linear.delete_project.",
+          "Example: auto-run linear.read_issue since it's read-only and safe.",
+          "Emit tool-confirmation events from the client when human-in-the-loop is needed."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "You might want to specify that the linear delete project tool needs explicit confirmation from the end user before it can be executed."
+      },
+      {
+        "timestamp": 869.5,
+        "name": "Outcomes",
+        "category": "feature",
+        "one_liner": "Plain-text rubrics that trigger a self-verification loop — Claude keeps iterating until criteria are met.",
+        "details": [
+          "Currently research preview, waitlisted; broader release expected in weeks.",
+          "Rubric can be inline text, markdown, or an uploaded file.",
+          "Example framing: 'the PR is entirely green and approved, all review comments addressed, integration tests passing.'",
+          "Michael reports 'really good uplift' in internal evals when Outcomes are used."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "When you use that, you can actually see that Claude will kick off its own self-verification loop to make sure that that rubric you provided it is being met."
+      },
+      {
+        "timestamp": 944.8,
+        "name": "Event namespaces",
+        "category": "feature",
+        "one_liner": "The event stream splits into user.*, agent.*, and session.* namespaces so clients can route by prefix.",
+        "details": [
+          "user.message, user.interrupt, user.tool_result, user.tool_confirmation.",
+          "agent.message, agent.tool_use / tool_result (native), agent.mcp_tool_use / result, agent.custom_tool_use, agent.context_compacted.",
+          "session.status (idle/running/rescheduling/terminated), session.error, span events for inference start/end and outcome eval start/end."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "Each event has a namespace prefix so that it's a little bit easier for you to understand how it's intended to be used."
+      },
+      {
+        "timestamp": 772.2,
+        "name": "user.interrupt event",
+        "category": "command",
+        "one_liner": "Client-emitted event that halts Claude mid-stream — wire it to your stop/escape button.",
+        "details": [
+          "Send when the user presses escape or clicks stop in your UI.",
+          "Stops the event stream cleanly without terminating the session."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "You can just emit one of these events, and that will stop the event stream."
+      },
+      {
+        "timestamp": 1011.2,
+        "name": "Session status lifecycle",
+        "category": "feature",
+        "one_liner": "Sessions transition through idle, running, rescheduling, and terminated — surfaced as status events.",
+        "details": [
+          "Rescheduling fires when the harness retries due to sampling or inference issues.",
+          "Termination is rare and typically only happens on explicit session deletion.",
+          "Status events are the primary signal for showing live activity in your UI."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "You want to know when a session transitions from idle, when nothing is happening, to running, as in Claude is maybe responding to you or executing a tool."
+      },
+      {
+        "timestamp": 1109.5,
+        "name": "Span events",
+        "category": "feature",
+        "one_liner": "Start/end wrappers around inference and outcome evaluation for richer client-side instrumentation.",
+        "details": [
+          "Know when Claude is running inference vs executing a tool — useful for thinking/typing indicators.",
+          "Separate spans wrap outcome evaluation start and end."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "You might want to know when, instead of using a tool, Claude is actually just submitting text right now. It's running inference. So we have wrappers around when that starts and ends."
+      },
+      {
+        "timestamp": 2179.9,
+        "name": "Console Managed Agents tab",
+        "category": "resource",
+        "one_liner": "New section in the developer console for creating agents, viewing sessions, and tracing transcripts.",
+        "details": [
+          "Includes a quick-start that uses Claude to scaffold agents for you.",
+          "Per-agent view shows built-in tools, custom tools, system prompt, and version history.",
+          "Per-session view shows full event transcript with per-step durations."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "In the developer console, we have this new tab called Managed Agents... I could actually click into one of these sessions, and I could see the history of events or the transcript."
+      },
+      {
+        "timestamp": 2285.7,
+        "name": "Agent versioning",
+        "category": "feature",
+        "one_liner": "Saving changes to an agent creates a new version; sessions can target V1, V2, or latest.",
+        "details": [
+          "Previous sessions remain bound to the version they were created with.",
+          "Useful for A/B comparisons — e.g., edit the system prompt to 'talk like a pirate' and start V2 sessions alongside V1."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "If I were to save this, I now have a V2 of the same agent, and I could decide to create sessions with the V1 version of this agent or the latest version."
+      },
+      {
+        "timestamp": 2402.2,
+        "name": "Ask Claude (console)",
+        "category": "feature",
+        "one_liner": "A side-session attached to a specific run that can analyze what went wrong or why latency was high.",
+        "details": [
+          "Aware of the full event transcript of the session it's launched from.",
+          "Can critique system prompt length, tool usage patterns, and latency hotspots."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "If things are going wrong, this is kind of like a side session... You can ask Claude to analyze the performance, and figure out any weird latency issues for the session."
+      },
+      {
+        "timestamp": 1835.9,
+        "name": "Managed Agents skill for Claude Code",
+        "category": "resource",
+        "one_liner": "A public skill in Anthropic's skills repo that teaches Claude Code to call the Managed Agents API.",
+        "details": [
+          "Ask Claude Code about Claude Managed Agents and it will invoke the skill.",
+          "Used live in the demo to implement a spec.md against the Managed Agents SDK end-to-end."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "We're teaching Claude Code how to use an API in order to build things with Claude. It's very meta, but this works really, really well."
+      },
+      {
+        "timestamp": 1862.3,
+        "name": "spec.md-driven build pattern",
+        "category": "pattern",
+        "one_liner": "Write a detailed spec.md of endpoints, behaviors, and out-of-scope items, then point Claude Code at it.",
+        "details": [
+          "Lists every API endpoint the app needs and the desired behavior for each.",
+          "Includes explicit out-of-scope items (e.g., no auth for a local demo).",
+          "Includes guardrails like 'don't recreate the agent/environment on every new session — reuse by ID.'",
+          "Michael: 'Writing these kind of longer specs and validating them with Claude before implementing things is usually a little bit better.'"
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "I found that writing these longer specs and validating them with Claude before implementing things is usually a little bit better."
+      },
+      {
+        "timestamp": 2038,
+        "name": "Custom tools for UI rendering",
+        "category": "pattern",
+        "one_liner": "Define custom tools that aren't executed server-side but instead instruct your web app to render UI.",
+        "details": [
+          "Demo used a render_map custom tool so Claude could display a map of busy Citi Bike stations.",
+          "Custom tool results are round-tripped from the client — you decide what the tool actually does."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "The custom render tool is literally just Claude telling our web app, 'Hey, here's some UI that you might want to display.'"
+      },
+      {
+        "timestamp": 3524.7,
+        "name": "Memory store",
+        "category": "feature",
+        "one_liner": "Cross-session memory primitive for Managed Agents, teased for release within hours of the session.",
+        "details": [
+          "Announcements expected via developer docs and Anthropic's Twitter.",
+          "Mentioned in response to a question about research-preview access before the hackathon deadline."
+        ],
+        "speaker": "Michael Cohen",
+        "quote": "Our memory store will probably be out in the next couple hours. So stay tuned."
+      }
+    ]
+  },
+  "created_at": "2026-04-23T16:00:00.000Z",
+  "updated_at": "2026-04-23T16:00:00.000Z"
+}
